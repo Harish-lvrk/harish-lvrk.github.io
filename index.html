@@ -1,59 +1,66 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hareesh Lotti - AI/ML Engineer specializing in RAG Systems, Vector Search, and Voice AI">
-    <meta name="keywords" content="AI Engineer, ML Engineer, RAG, LangChain, Python, FastAPI, Voice AI, Deep Learning, NLP">
+    <meta name="description"
+        content="Hareesh Lotti - AI/ML Engineer specializing in RAG Systems, Vector Search, and Voice AI">
+    <meta name="keywords"
+        content="AI Engineer, ML Engineer, RAG, LangChain, Python, FastAPI, Voice AI, Deep Learning, NLP">
     <meta name="author" content="Hareesh Lotti">
     <meta name="theme-color" content="#0a0a0f">
-    
+
     <!-- Open Graph -->
     <meta property="og:title" content="Hareesh Lotti | AI/ML Engineer">
     <meta property="og:description" content="Building Intelligent Systems that Think - RAG, Vector Search, Voice AI">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://harish-lvrk.github.io">
     <meta property="og:image" content="assets/images/og-image.png">
-    
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Hareesh Lotti | AI/ML Engineer">
     <meta name="twitter:description" content="Building Intelligent Systems that Think">
-    
+
     <title>Hareesh Lotti | AI/ML Engineer</title>
-    
+
     <!-- Favicon -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
-    
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=Orbitron:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/enhanced.css">
 </head>
+
 <body>
     <!-- Preloader -->
     <div id="preloader" class="preloader">
         <div class="loader-content">
             <div class="loader-brain">
                 <svg viewBox="0 0 100 100" class="brain-svg">
-                    <circle cx="50" cy="50" r="45" class="brain-circle"/>
-                    <path class="brain-path" d="M30,50 Q50,20 70,50 Q50,80 30,50"/>
-                    <circle cx="35" cy="40" r="5" class="neuron n1"/>
-                    <circle cx="65" cy="40" r="5" class="neuron n2"/>
-                    <circle cx="50" cy="60" r="5" class="neuron n3"/>
-                    <circle cx="40" cy="55" r="3" class="neuron n4"/>
-                    <circle cx="60" cy="55" r="3" class="neuron n5"/>
-                    <line x1="35" y1="40" x2="65" y2="40" class="synapse"/>
-                    <line x1="35" y1="40" x2="50" y2="60" class="synapse"/>
-                    <line x1="65" y1="40" x2="50" y2="60" class="synapse"/>
+                    <circle cx="50" cy="50" r="45" class="brain-circle" />
+                    <path class="brain-path" d="M30,50 Q50,20 70,50 Q50,80 30,50" />
+                    <circle cx="35" cy="40" r="5" class="neuron n1" />
+                    <circle cx="65" cy="40" r="5" class="neuron n2" />
+                    <circle cx="50" cy="60" r="5" class="neuron n3" />
+                    <circle cx="40" cy="55" r="3" class="neuron n4" />
+                    <circle cx="60" cy="55" r="3" class="neuron n5" />
+                    <line x1="35" y1="40" x2="65" y2="40" class="synapse" />
+                    <line x1="35" y1="40" x2="50" y2="60" class="synapse" />
+                    <line x1="65" y1="40" x2="50" y2="60" class="synapse" />
                 </svg>
             </div>
             <div class="loader-text">
@@ -85,23 +92,24 @@
 
     <!-- Neural Network Particle Background -->
     <canvas id="neural-bg"></canvas>
-    
+
     <!-- Matrix Rain Effect (Optional) -->
     <canvas id="matrix-rain" class="matrix-canvas"></canvas>
-    
+
     <!-- Cursor Glow Effect -->
     <div class="cursor-glow"></div>
-    
+
     <!-- Theme Toggle -->
     <button class="theme-toggle" id="theme-toggle" title="Toggle theme">
         <i class="fas fa-moon"></i>
         <i class="fas fa-sun"></i>
     </button>
-    
+
     <!-- Navigation -->
     <nav class="nav" id="nav">
-        <div class="nav-logo">
-            <span class="terminal-prompt">~$</span> hareesh<span class="accent">_</span>lotti
+        <div class="nav-logo glitch-wrapper">
+            <span class="terminal-prompt">~$</span> <span class="glitch-text" data-text="hareesh_lotti">hareesh<span
+                    class="accent">_</span>lotti</span>
         </div>
         <div class="nav-links">
             <a href="#about" class="nav-link">.about()</a>
@@ -196,10 +204,14 @@
                         <div class="photo-border"></div>
                     </div>
                     <div class="photo-socials">
-                        <a href="https://github.com/Harish-lvrk" target="_blank" data-tooltip="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="https://www.linkedin.com/in/hareesh-lotti" target="_blank" data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="https://twitter.com/harish_lvrk" target="_blank" data-tooltip="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="mailto:lottiharish@gmail.com" data-tooltip="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/Harish-lvrk" target="_blank" data-tooltip="GitHub"
+                            aria-label="GitHub Profile"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/hareesh-lotti" target="_blank" data-tooltip="LinkedIn"
+                            aria-label="LinkedIn Profile"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/harish_lvrk" target="_blank" data-tooltip="Twitter"
+                            aria-label="Twitter Profile"><i class="fab fa-twitter"></i></a>
+                        <a href="mailto:lottiharish@gmail.com" data-tooltip="Email" aria-label="Email Me"><i
+                                class="fas fa-envelope"></i></a>
                     </div>
                 </div>
                 <div class="about-text">
@@ -273,23 +285,31 @@
                     <div class="skill-items">
                         <div class="skill-item" data-skill="95">
                             <span class="skill-name">Python</span>
-                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
                         </div>
                         <div class="skill-item" data-skill="90">
                             <span class="skill-name">PyTorch / TensorFlow</span>
-                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
                         </div>
                         <div class="skill-item" data-skill="92">
                             <span class="skill-name">LangChain / LangGraph</span>
-                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
                         </div>
                         <div class="skill-item" data-skill="88">
                             <span class="skill-name">Hugging Face / Transformers</span>
-                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Backend -->
                 <div class="skill-category">
                     <h3 class="category-title">
@@ -298,19 +318,27 @@
                     <div class="skill-items">
                         <div class="skill-item" data-skill="93">
                             <span class="skill-name">FastAPI</span>
-                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
                         </div>
                         <div class="skill-item" data-skill="85">
                             <span class="skill-name">Spring Boot (Java)</span>
-                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
                         </div>
                         <div class="skill-item" data-skill="90">
                             <span class="skill-name">Qdrant / Vector DBs</span>
-                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
                         </div>
                         <div class="skill-item" data-skill="87">
                             <span class="skill-name">Docker / Deployment</span>
-                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -323,19 +351,27 @@
                     <div class="skill-items">
                         <div class="skill-item" data-skill="94">
                             <span class="skill-name">RAG Systems</span>
-                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
                         </div>
                         <div class="skill-item" data-skill="88">
                             <span class="skill-name">OpenAI / Gemini APIs</span>
-                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
                         </div>
                         <div class="skill-item" data-skill="85">
                             <span class="skill-name">Fine-tuning (LoRA/QLoRA)</span>
-                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
                         </div>
                         <div class="skill-item" data-skill="86">
                             <span class="skill-name">Voice AI / Livekit</span>
-                            <div class="skill-bar"><div class="skill-progress"></div></div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -387,7 +423,7 @@
                     </div>
                     <h3 class="project-title">Ask Chatbot! - RAG & AI Agent</h3>
                     <p class="project-description">
-                        Integrated RAG system with LangGraph-powered intelligent agents. Features document-based Q&A, 
+                        Integrated RAG system with LangGraph-powered intelligent agents. Features document-based Q&A,
                         multi-tool execution, and real-time workflow debugging with LangSmith.
                     </p>
                     <div class="project-features">
@@ -411,17 +447,19 @@
                             <i class="fas fa-lungs"></i>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/Harish-lvrk/Pneumonia-Detection" target="_blank" class="project-link">
+                            <a href="https://github.com/Harish-lvrk/Pneumonia-Detection" target="_blank"
+                                class="project-link">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="https://github.com/Harish-lvrk/Pneumonia-Detection/blob/main/A_Custom_CNN_Architecture/Summer_Intern_report_version_2.pdf" target="_blank" class="project-link">
+                            <a href="https://github.com/Harish-lvrk/Pneumonia-Detection/blob/main/A_Custom_CNN_Architecture/Summer_Intern_report_version_2.pdf"
+                                target="_blank" class="project-link">
                                 <i class="fas fa-file-pdf"></i>
                             </a>
                         </div>
                     </div>
                     <h3 class="project-title">Pneumonia Detection CNN</h3>
                     <p class="project-description">
-                        Custom 5-layer CNN for automated pneumonia detection from chest X-rays. 
+                        Custom 5-layer CNN for automated pneumonia detection from chest X-rays.
                         Achieved 90.4% accuracy with comprehensive data augmentation.
                     </p>
                     <div class="project-metrics">
@@ -449,17 +487,19 @@
                             <i class="fas fa-shield-alt"></i>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/Harish-lvrk/Insurance-Premium-Prediction-API" target="_blank" class="project-link">
+                            <a href="https://github.com/Harish-lvrk/Insurance-Premium-Prediction-API" target="_blank"
+                                class="project-link">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="https://fastapi-insurance-app-1-0.onrender.com/docs" target="_blank" class="project-link">
+                            <a href="https://fastapi-insurance-app-1-0.onrender.com/docs" target="_blank"
+                                class="project-link">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
                         </div>
                     </div>
                     <h3 class="project-title">Insurance Premium API</h3>
                     <p class="project-description">
-                        Production-ready ML API for insurance premium prediction. Features real-time inference, 
+                        Production-ready ML API for insurance premium prediction. Features real-time inference,
                         Pydantic validation, and Docker deployment.
                     </p>
                     <div class="project-metrics">
@@ -487,14 +527,15 @@
                             <i class="fas fa-taxi"></i>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/Harish-lvrk/ml-from-scratch/blob/main/new_york_tak_fare_prediction/nyc_taxi_fare_prediction_filled.ipynb" target="_blank" class="project-link">
+                            <a href="https://github.com/Harish-lvrk/ml-from-scratch/blob/main/new_york_tak_fare_prediction/nyc_taxi_fare_prediction_filled.ipynb"
+                                target="_blank" class="project-link">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
                     </div>
                     <h3 class="project-title">NYC Taxi Fare Prediction</h3>
                     <p class="project-description">
-                        Kaggle competition solution using XGBoost. Top 30% rank with feature engineering 
+                        Kaggle competition solution using XGBoost. Top 30% rank with feature engineering
                         including Haversine distance and temporal patterns.
                     </p>
                     <div class="project-metrics">
@@ -521,14 +562,15 @@
                             <i class="fab fa-youtube"></i>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/Harish-lvrk/YouTube_videos_Analyzer" target="_blank" class="project-link">
+                            <a href="https://github.com/Harish-lvrk/YouTube_videos_Analyzer" target="_blank"
+                                class="project-link">
                                 <i class="fab fa-github"></i>
                             </a>
                         </div>
                     </div>
                     <h3 class="project-title">YouTube Video Analyzer</h3>
                     <p class="project-description">
-                        RAG-based application to chat with YouTube videos. Downloads transcripts, 
+                        RAG-based application to chat with YouTube videos. Downloads transcripts,
                         creates FAISS vector index, and generates answers using Gemini.
                     </p>
                     <div class="project-tech">
@@ -549,7 +591,7 @@
                     </div>
                     <h3 class="project-title">Enterprise RAG Backend @ Zudu.ai</h3>
                     <p class="project-description">
-                        Production voice assistant backend with hybrid search, semantic chunking, 
+                        Production voice assistant backend with hybrid search, semantic chunking,
                         parent-child indexing, and real-time background sound mixing.
                     </p>
                     <div class="project-features">
@@ -590,7 +632,7 @@
                         </div>
                         <span class="timeline-date">Nov 2025 - Dec 2025</span>
                         <p class="timeline-description">
-                            Built enterprise-grade RAG backend microservice for production voice assistant. 
+                            Built enterprise-grade RAG backend microservice for production voice assistant.
                             Implemented hybrid search, semantic chunking, and real-time background sound mixing feature.
                         </p>
                         <div class="timeline-tech">
@@ -614,7 +656,7 @@
                         </div>
                         <span class="timeline-date">Summer 2025</span>
                         <p class="timeline-description">
-                            Developed and optimized ML models for business use cases. 
+                            Developed and optimized ML models for business use cases.
                             Engineered data preprocessing and feature engineering pipelines.
                         </p>
                         <div class="timeline-tech">
@@ -637,7 +679,7 @@
                         </div>
                         <span class="timeline-date">2022 - Present</span>
                         <p class="timeline-description">
-                            Developed web automation tools including results scraper to reduce manual work 
+                            Developed web automation tools including results scraper to reduce manual work
                             and support student engagement.
                         </p>
                     </div>
@@ -658,7 +700,8 @@
                             CGPA: 8.85 | Specializing in AI/ML and Backend Development
                         </p>
                         <div class="achievements">
-                            <span class="achievement"><i class="fas fa-trophy"></i> 1st Place - Madcode Competition</span>
+                            <span class="achievement"><i class="fas fa-trophy"></i> 1st Place - Madcode
+                                Competition</span>
                             <span class="achievement"><i class="fas fa-trophy"></i> 1st Place - Tech Hunt</span>
                         </div>
                     </div>
@@ -706,17 +749,21 @@
             <div class="github-content">
                 <div class="github-cards">
                     <div class="github-stat-card">
-                        <img src="https://github-readme-stats.vercel.app/api?username=Harish-lvrk&show_icons=true&theme=radical&hide_border=true&bg_color=0a0a0f&title_color=00ff88&icon_color=00d4ff&text_color=e0e0e0" alt="GitHub Stats" loading="lazy">
+                        <img src="https://github-readme-stats.vercel.app/api?username=Harish-lvrk&show_icons=true&theme=radical&hide_border=true&bg_color=0a0a0f&title_color=00ff88&icon_color=00d4ff&text_color=e0e0e0"
+                            alt="GitHub Stats" loading="lazy">
                     </div>
                     <div class="github-stat-card">
-                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Harish-lvrk&layout=compact&theme=radical&hide_border=true&bg_color=0a0a0f&title_color=00ff88&text_color=e0e0e0" alt="Top Languages" loading="lazy">
+                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Harish-lvrk&layout=compact&theme=radical&hide_border=true&bg_color=0a0a0f&title_color=00ff88&text_color=e0e0e0"
+                            alt="Top Languages" loading="lazy">
                     </div>
                 </div>
                 <div class="github-streak">
-                    <img src="https://github-readme-streak-stats.herokuapp.com/?user=Harish-lvrk&theme=radical&hide_border=true&background=0a0a0f&ring=00ff88&fire=ff006e&currStreakLabel=00ff88" alt="GitHub Streak" loading="lazy">
+                    <img src="https://github-readme-streak-stats.herokuapp.com/?user=Harish-lvrk&theme=radical&hide_border=true&background=0a0a0f&ring=00ff88&fire=ff006e&currStreakLabel=00ff88"
+                        alt="GitHub Streak" loading="lazy">
                 </div>
                 <div class="github-graph">
-                    <img src="https://github-readme-activity-graph.vercel.app/graph?username=Harish-lvrk&theme=react-dark&hide_border=true&bg_color=0a0a0f&color=00ff88&line=00d4ff&point=ff006e" alt="Contribution Graph" loading="lazy">
+                    <img src="https://github-readme-activity-graph.vercel.app/graph?username=Harish-lvrk&theme=react-dark&hide_border=true&bg_color=0a0a0f&color=00ff88&line=00d4ff&point=ff006e"
+                        alt="Contribution Graph" loading="lazy">
                 </div>
             </div>
         </div>
@@ -806,7 +853,8 @@
                         <i class="fas fa-rocket"></i>
                     </div>
                     <h3>Fast Learner</h3>
-                    <p>Quickly adapt to new technologies. Learned Livekit, Qdrant, and enterprise patterns on the job.</p>
+                    <p>Quickly adapt to new technologies. Learned Livekit, Qdrant, and enterprise patterns on the job.
+                    </p>
                 </div>
                 <div class="value-card">
                     <div class="value-icon">
@@ -827,19 +875,19 @@
                 Get In Touch
                 <span class="title-decorator">/&gt;</span>
             </h2>
-            
+
             <!-- Availability Status -->
             <div class="availability-status">
                 <span class="status-dot"></span>
                 <span class="status-text">Available for opportunities</span>
             </div>
-            
+
             <div class="contact-content">
                 <div class="contact-text">
                     <h3 class="contact-heading orbitron">Let's Build Something Amazing</h3>
                     <p class="contact-description">
-                        I'm currently looking for new opportunities in AI/ML Engineering. 
-                        Whether you have a project idea, job opportunity, or just want to say hi, 
+                        I'm currently looking for new opportunities in AI/ML Engineering.
+                        Whether you have a project idea, job opportunity, or just want to say hi,
                         I'll try my best to get back to you!
                     </p>
                     <div class="contact-terminal">
@@ -848,26 +896,23 @@
                         </div>
                     </div>
                 </div>
-                <div class="contact-links">
-                    <a href="mailto:lottiharish@gmail.com" class="contact-link" data-tooltip="Send me an email">
-                        <i class="fas fa-envelope"></i>
-                        <span>lottiharish@gmail.com</span>
+                <div class="contact-grid">
+                    <a href="https://www.linkedin.com/in/hareesh-lotti" target="_blank" class="contact-card-item"
+                        aria-label="Connect on LinkedIn">
+                        <div class="contact-icon-box"><i class="fab fa-linkedin-in"></i></div>
+                        <span class="contact-label">Connect professionally</span>
+                        <span class="contact-value">LinkedIn</span>
                     </a>
-                    <a href="https://github.com/Harish-lvrk" target="_blank" class="contact-link" data-tooltip="Check my code">
-                        <i class="fab fa-github"></i>
-                        <span>github.com/Harish-lvrk</span>
+                    <a href="https://twitter.com/harish_lvrk" target="_blank" class="contact-card-item"
+                        aria-label="Follow on Twitter">
+                        <div class="contact-icon-box"><i class="fab fa-twitter"></i></div>
+                        <span class="contact-label">Follow me</span>
+                        <span class="contact-value">@harish_lvrk</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/hareesh-lotti" target="_blank" class="contact-link" data-tooltip="Connect professionally">
-                        <i class="fab fa-linkedin"></i>
-                        <span>linkedin.com/in/hareesh-lotti</span>
-                    </a>
-                    <a href="https://twitter.com/harish_lvrk" target="_blank" class="contact-link" data-tooltip="Follow me on X">
-                        <i class="fab fa-twitter"></i>
-                        <span>@harish_lvrk</span>
-                    </a>
-                    <a href="tel:+916374248411" class="contact-link" data-tooltip="Call me">
-                        <i class="fas fa-phone"></i>
-                        <span>+91 6374248411</span>
+                    <a href="mailto:lottiharish@gmail.com" class="contact-card-item" aria-label="Email Me">
+                        <div class="contact-icon-box"><i class="fas fa-envelope"></i></div>
+                        <span class="contact-label">Drop a mail</span>
+                        <span class="contact-value">lottiharish@gmail.com</span>
                     </a>
                 </div>
                 <div class="contact-buttons">
@@ -879,7 +924,6 @@
                     </a>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Footer -->
@@ -887,12 +931,13 @@
         <div class="container">
             <div class="footer-content">
                 <p class="footer-text">
-                    <span class="terminal-prompt">$</span> Designed & Built by 
+                    <span class="terminal-prompt">$</span> Designed & Built by
                     <span class="accent">Hareesh Lotti</span>
                 </p>
                 <div class="footer-links">
                     <a href="https://github.com/Harish-lvrk" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/hareesh-lotti" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/hareesh-lotti" target="_blank"><i
+                            class="fab fa-linkedin"></i></a>
                     <a href="https://twitter.com/harish_lvrk" target="_blank"><i class="fab fa-twitter"></i></a>
                     <a href="mailto:lottiharish@gmail.com"><i class="fas fa-envelope"></i></a>
                 </div>
@@ -905,5 +950,5 @@
     <script src="js/particles.js"></script>
     <script src="js/main.js"></script>
 </body>
-</html>
 
+</html>

@@ -63,11 +63,25 @@
     animation: neuron-pulse 1s ease-in-out infinite;
 }
 
-.neuron.n1 { animation-delay: 0s; }
-.neuron.n2 { animation-delay: 0.2s; }
-.neuron.n3 { animation-delay: 0.4s; }
-.neuron.n4 { animation-delay: 0.6s; }
-.neuron.n5 { animation-delay: 0.8s; }
+.neuron.n1 {
+    animation-delay: 0s;
+}
+
+.neuron.n2 {
+    animation-delay: 0.2s;
+}
+
+.neuron.n3 {
+    animation-delay: 0.4s;
+}
+
+.neuron.n4 {
+    animation-delay: 0.6s;
+}
+
+.neuron.n5 {
+    animation-delay: 0.8s;
+}
 
 .synapse {
     stroke: var(--secondary);
@@ -77,24 +91,41 @@
 }
 
 @keyframes brain-draw {
-    0%, 100% { stroke-dashoffset: 283; }
-    50% { stroke-dashoffset: 0; }
+
+    0%,
+    100% {
+        stroke-dashoffset: 283;
+    }
+
+    50% {
+        stroke-dashoffset: 0;
+    }
 }
 
 @keyframes neuron-pulse {
-    0%, 100% { 
+
+    0%,
+    100% {
         transform: scale(1);
         fill: var(--primary);
     }
-    50% { 
+
+    50% {
         transform: scale(1.3);
         fill: var(--secondary);
     }
 }
 
 @keyframes synapse-fire {
-    0%, 100% { opacity: 0.3; }
-    50% { opacity: 1; }
+
+    0%,
+    100% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 1;
+    }
 }
 
 .loader-text {
@@ -110,22 +141,64 @@
     animation: letter-bounce 0.5s ease infinite;
 }
 
-.loader-letter:nth-child(1) { animation-delay: 0s; }
-.loader-letter:nth-child(2) { animation-delay: 0.05s; }
-.loader-letter:nth-child(3) { animation-delay: 0.1s; }
-.loader-letter:nth-child(4) { animation-delay: 0.15s; }
-.loader-letter:nth-child(5) { animation-delay: 0.2s; }
-.loader-letter:nth-child(6) { animation-delay: 0.25s; }
-.loader-letter:nth-child(7) { animation-delay: 0.3s; }
-.loader-letter:nth-child(8) { animation-delay: 0.35s; }
-.loader-letter:nth-child(9) { animation-delay: 0.4s; }
-.loader-letter:nth-child(10) { animation-delay: 0.45s; }
-.loader-letter:nth-child(11) { animation-delay: 0.5s; }
-.loader-letter:nth-child(12) { animation-delay: 0.55s; }
+.loader-letter:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.loader-letter:nth-child(2) {
+    animation-delay: 0.05s;
+}
+
+.loader-letter:nth-child(3) {
+    animation-delay: 0.1s;
+}
+
+.loader-letter:nth-child(4) {
+    animation-delay: 0.15s;
+}
+
+.loader-letter:nth-child(5) {
+    animation-delay: 0.2s;
+}
+
+.loader-letter:nth-child(6) {
+    animation-delay: 0.25s;
+}
+
+.loader-letter:nth-child(7) {
+    animation-delay: 0.3s;
+}
+
+.loader-letter:nth-child(8) {
+    animation-delay: 0.35s;
+}
+
+.loader-letter:nth-child(9) {
+    animation-delay: 0.4s;
+}
+
+.loader-letter:nth-child(10) {
+    animation-delay: 0.45s;
+}
+
+.loader-letter:nth-child(11) {
+    animation-delay: 0.5s;
+}
+
+.loader-letter:nth-child(12) {
+    animation-delay: 0.55s;
+}
 
 @keyframes letter-bounce {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
 }
 
 .loader-dots {
@@ -133,9 +206,19 @@
 }
 
 @keyframes dots-blink {
-    0%, 20% { opacity: 0; }
-    40% { opacity: 1; }
-    100% { opacity: 1; }
+
+    0%,
+    20% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .loader-progress {
@@ -155,9 +238,20 @@
 }
 
 @keyframes progress-fill {
-    0% { width: 0%; transform: translateX(0); }
-    50% { width: 100%; transform: translateX(0); }
-    100% { width: 100%; transform: translateX(100%); }
+    0% {
+        width: 0%;
+        transform: translateX(0);
+    }
+
+    50% {
+        width: 100%;
+        transform: translateX(0);
+    }
+
+    100% {
+        width: 100%;
+        transform: translateX(100%);
+    }
 }
 
 /* ============================================
@@ -403,12 +497,10 @@
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-        90deg,
-        transparent,
-        rgba(0, 255, 136, 0.1),
-        transparent
-    );
+    background: linear-gradient(90deg,
+            transparent,
+            rgba(0, 255, 136, 0.1),
+            transparent);
     transition: 0.5s;
 }
 
@@ -676,27 +768,28 @@
    RESPONSIVE ADJUSTMENTS
    ============================================ */
 @media (max-width: 768px) {
+
     .floating-socials,
     .floating-email {
         display: none;
     }
-    
+
     .theme-toggle {
         bottom: 20px;
         right: 20px;
         width: 45px;
         height: 45px;
     }
-    
+
     .back-to-top {
         bottom: 80px;
         right: 20px;
     }
-    
+
     .github-cards {
         flex-direction: column;
     }
-    
+
     .github-stat-card img,
     .github-streak img,
     .github-graph img {
@@ -715,7 +808,7 @@
    NEON BOX SHADOW UTILITY
    ============================================ */
 .neon-box {
-    box-shadow: 
+    box-shadow:
         0 0 5px var(--primary),
         0 0 10px var(--primary),
         0 0 20px var(--primary),
@@ -807,9 +900,12 @@
 }
 
 @keyframes status-pulse {
-    0%, 100% {
+
+    0%,
+    100% {
         box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7);
     }
+
     50% {
         box-shadow: 0 0 0 10px rgba(0, 255, 136, 0);
     }
@@ -843,14 +939,12 @@
    ANIMATED GRADIENT TEXT
    ============================================ */
 .animated-gradient {
-    background: linear-gradient(
-        135deg,
-        var(--primary) 0%,
-        var(--secondary) 25%,
-        var(--accent) 50%,
-        var(--secondary) 75%,
-        var(--primary) 100%
-    );
+    background: linear-gradient(135deg,
+            var(--primary) 0%,
+            var(--secondary) 25%,
+            var(--accent) 50%,
+            var(--secondary) 75%,
+            var(--primary) 100%);
     background-size: 400% 400%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -859,9 +953,17 @@
 }
 
 @keyframes gradient-flow {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 /* ============================================
@@ -879,19 +981,22 @@
     left: -50%;
     width: 200%;
     height: 200%;
-    background: linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(255, 255, 255, 0.1) 50%,
-        transparent 100%
-    );
+    background: linear-gradient(to right,
+            transparent 0%,
+            rgba(255, 255, 255, 0.1) 50%,
+            transparent 100%);
     transform: rotate(45deg);
     animation: shine 3s infinite;
 }
 
 @keyframes shine {
-    0% { transform: rotate(45deg) translateX(-100%); }
-    100% { transform: rotate(45deg) translateX(100%); }
+    0% {
+        transform: rotate(45deg) translateX(-100%);
+    }
+
+    100% {
+        transform: rotate(45deg) translateX(100%);
+    }
 }
 
 /* ============================================
@@ -904,8 +1009,15 @@
 }
 
 @keyframes cursor-blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
 }
 
 /* ============================================
@@ -924,7 +1036,9 @@
 }
 
 @keyframes reveal-mask {
-    to { clip-path: inset(0 0 0 0); }
+    to {
+        clip-path: inset(0 0 0 0);
+    }
 }
 
 /* ============================================
@@ -969,6 +1083,7 @@
         opacity: 1;
         transform: translate(0, 0) scale(1);
     }
+
     100% {
         opacity: 0;
         transform: translate(var(--tx), var(--ty)) scale(0);
@@ -983,19 +1098,31 @@
     overflow: hidden;
     border-right: 2px solid var(--primary);
     white-space: nowrap;
-    animation: 
+    animation:
         code-typing 3.5s steps(40, end),
         blink-caret 0.75s step-end infinite;
 }
 
 @keyframes code-typing {
-    from { width: 0; }
-    to { width: 100%; }
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
 @keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: var(--primary); }
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: var(--primary);
+    }
 }
 
 /* ============================================
@@ -1118,11 +1245,11 @@
         grid-template-columns: 1fr;
         justify-items: center;
     }
-    
+
     .about-photo {
         order: -1;
     }
-    
+
     .photo-wrapper {
         width: 200px;
         height: 200px;
@@ -1134,7 +1261,7 @@
         width: 180px;
         height: 180px;
     }
-    
+
     .photo-socials a {
         width: 40px;
         height: 40px;
@@ -1142,3 +1269,118 @@
     }
 }
 
+
+/* ============================================
+   CURSOR GLOW EFFECT (Moved from style.css)
+   ============================================ */
+.cursor-glow {
+    position: fixed;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(0, 255, 136, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9998;
+    /* Below custom cursor (99999) */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+body:hover .cursor-glow {
+    opacity: 1;
+}
+
+/* ============================================
+   GLITCH EFFECT
+   ============================================ */
+.glitch-wrapper {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+.glitch-text {
+    position: relative;
+    z-index: 1;
+}
+
+.glitch-text::before,
+.glitch-text::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--bg-primary);
+    display: none;
+}
+
+.glitch-wrapper:hover .glitch-text::before {
+    display: block;
+    left: 2px;
+    text-shadow: -1px 0 var(--accent);
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim-1 2.5s infinite linear alternate-reverse;
+}
+
+.glitch-wrapper:hover .glitch-text::after {
+    display: block;
+    left: -2px;
+    text-shadow: -1px 0 var(--secondary);
+    clip: rect(44px, 450px, 56px, 0);
+    animation: glitch-anim-2 3s infinite linear alternate-reverse;
+}
+
+@keyframes glitch-anim-1 {
+    0% {
+        clip: rect(20px, 9999px, 15px, 0);
+    }
+
+    20% {
+        clip: rect(60px, 9999px, 70px, 0);
+    }
+
+    40% {
+        clip: rect(20px, 9999px, 50px, 0);
+    }
+
+    60% {
+        clip: rect(10px, 9999px, 80px, 0);
+    }
+
+    80% {
+        clip: rect(50px, 9999px, 20px, 0);
+    }
+
+    100% {
+        clip: rect(30px, 9999px, 90px, 0);
+    }
+}
+
+@keyframes glitch-anim-2 {
+    0% {
+        clip: rect(25px, 9999px, 90px, 0);
+    }
+
+    20% {
+        clip: rect(15px, 9999px, 10px, 0);
+    }
+
+    40% {
+        clip: rect(80px, 9999px, 50px, 0);
+    }
+
+    60% {
+        clip: rect(30px, 9999px, 20px, 0);
+    }
+
+    80% {
+        clip: rect(50px, 9999px, 90px, 0);
+    }
+
+    100% {
+        clip: rect(10px, 9999px, 30px, 0);
+    }
+}

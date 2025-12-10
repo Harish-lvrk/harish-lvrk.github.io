@@ -29,19 +29,19 @@ document.addEventListener('DOMContentLoaded', () => {
 function initPreloader() {
     const preloader = document.getElementById('preloader');
     if (!preloader) return;
-    
+
     // Minimum display time for preloader
     const minDisplayTime = 2000;
     const startTime = Date.now();
-    
+
     window.addEventListener('load', () => {
         const elapsedTime = Date.now() - startTime;
         const remainingTime = Math.max(0, minDisplayTime - elapsedTime);
-        
+
         setTimeout(() => {
             preloader.classList.add('hidden');
             document.body.style.overflow = 'visible';
-            
+
             // Remove preloader from DOM after animation
             setTimeout(() => {
                 preloader.remove();
@@ -56,42 +56,42 @@ function initPreloader() {
 function initCustomCursor() {
     const cursor = document.querySelector('.custom-cursor');
     if (!cursor || window.matchMedia('(hover: none)').matches) return;
-    
+
     const dot = cursor.querySelector('.cursor-dot');
     const ring = cursor.querySelector('.cursor-ring');
-    
+
     let mouseX = 0, mouseY = 0;
     let ringX = 0, ringY = 0;
-    
+
     document.addEventListener('mousemove', (e) => {
         mouseX = e.clientX;
         mouseY = e.clientY;
-        
+
         // Dot follows instantly
         dot.style.left = mouseX + 'px';
         dot.style.top = mouseY + 'px';
     });
-    
+
     // Ring follows with delay (smooth)
     function animateRing() {
         ringX += (mouseX - ringX) * 0.15;
         ringY += (mouseY - ringY) * 0.15;
-        
+
         ring.style.left = ringX + 'px';
         ring.style.top = ringY + 'px';
-        
+
         requestAnimationFrame(animateRing);
     }
     animateRing();
-    
+
     // Hover effect on interactive elements
     const interactiveElements = document.querySelectorAll('a, button, .project-card, .skill-item, .tech-badge');
-    
+
     interactiveElements.forEach(el => {
         el.addEventListener('mouseenter', () => ring.classList.add('hover'));
         el.addEventListener('mouseleave', () => ring.classList.remove('hover'));
     });
-    
+
     // Click effect
     document.addEventListener('mousedown', () => ring.classList.add('click'));
     document.addEventListener('mouseup', () => ring.classList.remove('click'));
@@ -103,18 +103,18 @@ function initCustomCursor() {
 function initThemeToggle() {
     const toggle = document.getElementById('theme-toggle');
     if (!toggle) return;
-    
+
     // Check for saved theme preference
     const savedTheme = localStorage.getItem('theme') || 'dark';
     document.documentElement.setAttribute('data-theme', savedTheme);
-    
+
     toggle.addEventListener('click', () => {
         const currentTheme = document.documentElement.getAttribute('data-theme');
         const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        
+
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
-        
+
         // Update neural network colors
         updateNeuralNetworkTheme(newTheme);
     });
@@ -137,7 +137,7 @@ function initScrollProgress() {
         progressBar.className = 'scroll-progress';
         document.body.prepend(progressBar);
     }
-    
+
     window.addEventListener('scroll', () => {
         const windowHeight = document.documentElement.scrollHeight - window.innerHeight;
         const scrolled = (window.scrollY / windowHeight) * 100;
@@ -158,7 +158,7 @@ function initBackToTop() {
         backToTop.setAttribute('aria-label', 'Back to top');
         document.body.appendChild(backToTop);
     }
-    
+
     window.addEventListener('scroll', () => {
         if (window.scrollY > 500) {
             backToTop.classList.add('visible');
@@ -166,7 +166,7 @@ function initBackToTop() {
             backToTop.classList.remove('visible');
         }
     });
-    
+
     backToTop.addEventListener('click', () => {
         window.scrollTo({
             top: 0,
@@ -180,11 +180,11 @@ function initBackToTop() {
  */
 function initTextScramble() {
     const elements = document.querySelectorAll('.scramble-text');
-    
+
     elements.forEach(el => {
         const originalText = el.textContent;
         const chars = '!<>-_\\/[]{}—=+*^?#________';
-        
+
         el.addEventListener('mouseenter', () => {
             let iteration = 0;
             const interval = setInterval(() => {
@@ -197,12 +197,12 @@ function initTextScramble() {
                         return chars[Math.floor(Math.random() * chars.length)];
                     })
                     .join('');
-                
+
                 if (iteration >= originalText.length) {
                     clearInterval(interval);
                 }
-                
-                iteration += 1/3;
+
+                iteration += 1 / 3;
             }, 30);
         });
     });
@@ -230,7 +230,7 @@ function initFloatingElements() {
         </a>
     `;
     document.body.appendChild(floatingSocials);
-    
+
     // Create floating email
     const floatingEmail = document.createElement('div');
     floatingEmail.className = 'floating-email';
@@ -246,44 +246,44 @@ function initFloatingElements() {
 function initMatrixRain() {
     const canvas = document.getElementById('matrix-rain');
     if (!canvas) return;
-    
+
     const ctx = canvas.getContext('2d');
-    
+
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    
+
     const chars = 'アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     const charArray = chars.split('');
-    
+
     const fontSize = 14;
     const columns = canvas.width / fontSize;
-    
+
     const drops = [];
     for (let i = 0; i < columns; i++) {
         drops[i] = Math.random() * canvas.height / fontSize;
     }
-    
+
     function draw() {
         ctx.fillStyle = 'rgba(10, 10, 15, 0.05)';
         ctx.fillRect(0, 0, canvas.width, canvas.height);
-        
+
         ctx.fillStyle = '#00ff8830';
         ctx.font = fontSize + 'px monospace';
-        
+
         for (let i = 0; i < drops.length; i++) {
             const char = charArray[Math.floor(Math.random() * charArray.length)];
             ctx.fillText(char, i * fontSize, drops[i] * fontSize);
-            
+
             if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
                 drops[i] = 0;
             }
             drops[i]++;
         }
     }
-    
+
     // Run at lower framerate for performance
     setInterval(draw, 50);
-    
+
     window.addEventListener('resize', () => {
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
@@ -298,36 +298,36 @@ function initNavigation() {
     const navToggle = document.getElementById('nav-toggle');
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileLinks = document.querySelectorAll('.mobile-link');
-    
+
     // Scroll effect for navbar
     let lastScroll = 0;
     window.addEventListener('scroll', () => {
         const currentScroll = window.pageYOffset;
-        
+
         // Add/remove scrolled class
         if (currentScroll > 50) {
             nav.classList.add('scrolled');
         } else {
             nav.classList.remove('scrolled');
         }
-        
+
         // Hide/show on scroll direction
         if (currentScroll > lastScroll && currentScroll > 200) {
             nav.style.transform = 'translateY(-100%)';
         } else {
             nav.style.transform = 'translateY(0)';
         }
-        
+
         lastScroll = currentScroll;
     });
-    
+
     // Mobile menu toggle
     if (navToggle && mobileMenu) {
         navToggle.addEventListener('click', () => {
             mobileMenu.classList.toggle('active');
             navToggle.classList.toggle('active');
         });
-        
+
         // Close mobile menu on link click
         mobileLinks.forEach(link => {
             link.addEventListener('click', () => {
@@ -336,23 +336,23 @@ function initNavigation() {
             });
         });
     }
-    
+
     // Active link highlighting
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-link');
-    
+
     window.addEventListener('scroll', () => {
         let current = '';
-        
+
         sections.forEach(section => {
             const sectionTop = section.offsetTop - 100;
             const sectionHeight = section.offsetHeight;
-            
+
             if (window.pageYOffset >= sectionTop) {
                 current = section.getAttribute('id');
             }
         });
-        
+
         navLinks.forEach(link => {
             link.classList.remove('active');
             if (link.getAttribute('href') === `#${current}`) {
@@ -371,17 +371,17 @@ function initScrollAnimations() {
         rootMargin: '0px',
         threshold: 0.1
     };
-    
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('active');
-                
+
                 // Trigger skill bars animation
                 if (entry.target.classList.contains('skill-category')) {
                     animateSkillBars(entry.target);
                 }
-                
+
                 // Trigger counter animation
                 if (entry.target.classList.contains('stat-card')) {
                     animateCounter(entry.target.querySelector('.stat-number'));
@@ -389,13 +389,13 @@ function initScrollAnimations() {
             }
         });
     }, observerOptions);
-    
+
     // Observe elements
     const animatedElements = document.querySelectorAll(
         '.section-title, .about-content, .skill-category, .project-card, ' +
         '.timeline-item, .cert-card, .stat-card, .contact-content'
     );
-    
+
     animatedElements.forEach(el => {
         el.classList.add('reveal');
         observer.observe(el);
@@ -411,11 +411,11 @@ function initSkillBars() {
 
 function animateSkillBars(container) {
     const skillItems = container.querySelectorAll('.skill-item');
-    
+
     skillItems.forEach((item, index) => {
         const progress = item.querySelector('.skill-progress');
         const skillLevel = item.getAttribute('data-skill');
-        
+
         setTimeout(() => {
             progress.style.width = `${skillLevel}%`;
         }, index * 100);
@@ -431,13 +431,13 @@ function initCounters() {
 
 function animateCounter(element) {
     if (!element || element.classList.contains('counted')) return;
-    
+
     element.classList.add('counted');
     const target = parseInt(element.getAttribute('data-target'));
     const duration = 2000;
     const step = target / (duration / 16);
     let current = 0;
-    
+
     const updateCounter = () => {
         current += step;
         if (current < target) {
@@ -451,7 +451,7 @@ function animateCounter(element) {
             }
         }
     };
-    
+
     updateCounter();
 }
 
@@ -461,20 +461,20 @@ function animateCounter(element) {
 function initTerminalTyping() {
     const terminalOutput = document.getElementById('terminal-output');
     const typingCmd = document.getElementById('typing-cmd');
-    
+
     if (!terminalOutput || !typingCmd) return;
-    
+
     // Hide output initially
     terminalOutput.style.opacity = '0';
     terminalOutput.style.transform = 'translateY(20px)';
-    
+
     // Show output after typing animation
     setTimeout(() => {
         terminalOutput.style.transition = 'all 0.5s ease';
         terminalOutput.style.opacity = '1';
         terminalOutput.style.transform = 'translateY(0)';
     }, 2500);
-    
+
     // Add interactive terminal commands (Easter egg)
     addTerminalInteractivity();
 }
@@ -482,7 +482,7 @@ function initTerminalTyping() {
 function addTerminalInteractivity() {
     // Easter egg: Press Ctrl+` to open interactive terminal
     let terminalActive = false;
-    
+
     document.addEventListener('keydown', (e) => {
         if (e.ctrlKey && e.key === '`') {
             e.preventDefault();
@@ -493,7 +493,7 @@ function addTerminalInteractivity() {
 
 function toggleInteractiveTerminal() {
     let terminal = document.getElementById('interactive-terminal');
-    
+
     if (!terminal) {
         // Create interactive terminal
         terminal = document.createElement('div');
@@ -520,7 +520,7 @@ function toggleInteractiveTerminal() {
                 </div>
             </div>
         `;
-        
+
         // Add styles
         const style = document.createElement('style');
         style.textContent = `
@@ -570,7 +570,7 @@ function toggleInteractiveTerminal() {
         `;
         document.head.appendChild(style);
         document.body.appendChild(terminal);
-        
+
         // Add input handler
         const input = document.getElementById('terminal-input');
         input.addEventListener('keypress', handleTerminalCommand);
@@ -592,18 +592,18 @@ function closeInteractiveTerminal() {
 
 function handleTerminalCommand(e) {
     if (e.key !== 'Enter') return;
-    
+
     const input = document.getElementById('terminal-input');
     const output = document.getElementById('terminal-output-interactive');
     const command = input.value.trim().toLowerCase();
-    
+
     // Add command to output
     output.innerHTML += `<p><span style="color: #00ff88;">$</span> ${input.value}</p>`;
-    
+
     // Process command
     let response = '';
-    
-    switch(command) {
+
+    switch (command) {
         case 'help':
             response = `
                 Available commands:<br>
@@ -645,7 +645,7 @@ function handleTerminalCommand(e) {
         default:
             response = `Command not found: ${command}. Type 'help' for available commands.`;
     }
-    
+
     output.innerHTML += `<p style="color: #a0a0a0;">${response}</p>`;
     output.scrollTop = output.scrollHeight;
     input.value = '';
@@ -656,15 +656,15 @@ function handleTerminalCommand(e) {
  */
 function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
+        anchor.addEventListener('click', function (e) {
             e.preventDefault();
             const target = document.querySelector(this.getAttribute('href'));
-            
+
             if (target) {
                 const headerOffset = 80;
                 const elementPosition = target.getBoundingClientRect().top;
                 const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-                
+
                 window.scrollTo({
                     top: offsetPosition,
                     behavior: 'smooth'
@@ -679,22 +679,22 @@ function initSmoothScroll() {
  */
 function initProjectCards() {
     const cards = document.querySelectorAll('.project-card');
-    
+
     cards.forEach(card => {
         card.addEventListener('mousemove', (e) => {
             const rect = card.getBoundingClientRect();
             const x = e.clientX - rect.left;
             const y = e.clientY - rect.top;
-            
+
             const centerX = rect.width / 2;
             const centerY = rect.height / 2;
-            
+
             const rotateX = (y - centerY) / 20;
             const rotateY = (centerX - x) / 20;
-            
+
             card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-10px)`;
         });
-        
+
         card.addEventListener('mouseleave', () => {
             card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
         });
@@ -721,7 +721,7 @@ function debounce(func, wait) {
  */
 function throttle(func, limit) {
     let inThrottle;
-    return function(...args) {
+    return function (...args) {
         if (!inThrottle) {
             func.apply(this, args);
             inThrottle = true;
@@ -731,15 +731,7 @@ function throttle(func, limit) {
 }
 
 // Add preloader
-window.addEventListener('load', () => {
-    const preloader = document.getElementById('preloader');
-    if (preloader) {
-        preloader.style.opacity = '0';
-        setTimeout(() => {
-            preloader.style.display = 'none';
-        }, 500);
-    }
-});
+
 
 // Console Easter Egg
 console.log(`
