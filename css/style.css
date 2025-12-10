@@ -851,6 +851,167 @@ body {
     margin-bottom: 10px;
 }
 
+/* ============================================
+   GITHUB STATS SECTION (Custom Implementation)
+   ============================================ */
+.github-stats {
+    background: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+}
+
+.github-profile-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.github-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 30px;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+    overflow: hidden;
+    transition: var(--transition-normal);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.github-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+}
+
+.github-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-5px);
+    box-shadow: var(--glow-primary);
+}
+
+.gh-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.gh-avatar-container {
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.gh-avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid var(--primary);
+    object-fit: cover;
+}
+
+.gh-status-dot {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    width: 15px;
+    height: 15px;
+    background: #00ff88;
+    border-radius: 50%;
+    border: 2px solid var(--bg-secondary);
+    box-shadow: 0 0 10px #00ff88;
+    animation: blink 2s infinite;
+}
+
+.gh-info h3 {
+    font-size: 1.5rem;
+    color: var(--text-primary);
+    margin-bottom: 5px;
+}
+
+.gh-username {
+    font-family: var(--font-mono);
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.gh-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.gh-stat {
+    background: var(--bg-tertiary);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    transition: var(--transition-fast);
+}
+
+.gh-stat:hover {
+    background: var(--bg-primary);
+    transform: translateY(-2px);
+}
+
+.gh-stat-value {
+    display: block;
+    font-family: var(--font-mono);
+    font-size: 1.2rem;
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.gh-stat-label {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.gh-graph-mock {
+    margin-bottom: 25px;
+}
+
+.gh-graph-title {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gh-activity-bars {
+    display: flex;
+    gap: 4px;
+    align-items: flex-end;
+    height: 50px;
+}
+
+.gh-bar {
+    flex: 1;
+    background: var(--bg-tertiary);
+    border-radius: 2px;
+    transition: height 0.5s ease;
+}
+
+.gh-bar:hover {
+    background: var(--primary);
+    box-shadow: 0 0 10px var(--primary-dim);
+}
+
+.gh-footer {
+    text-align: center;
+}
+
+
+
 .timeline-title {
     font-size: 1.2rem;
     color: var(--text-primary);
@@ -1204,4 +1365,57 @@ body {
         flex-direction: column;
         gap: 15px;
     }
+}
+
+/* GitHub Calendar Overrides */
+.calendar {
+    width: 100%;
+    border: none !important;
+    min-height: 120px;
+}
+
+.calendar .width-full {
+    width: 100% !important;
+}
+
+.calendar .contrib-legend {
+    display: none !important;
+    /* Hide legend to save space */
+}
+
+.calendar text.Month,
+.calendar text.wday {
+    fill: var(--text-secondary) !important;
+    font-size: 10px;
+}
+
+.calendar rect.ContributionCalendar-day {
+    rx: 2px;
+    ry: 2px;
+}
+
+.calendar rect.ContributionCalendar-day[data-level='0'] {
+    fill: var(--bg-tertiary) !important;
+}
+
+.calendar rect.ContributionCalendar-day[data-level='1'] {
+    fill: rgba(0, 255, 136, 0.2) !important;
+}
+
+.calendar rect.ContributionCalendar-day[data-level='2'] {
+    fill: rgba(0, 255, 136, 0.4) !important;
+}
+
+.calendar rect.ContributionCalendar-day[data-level='3'] {
+    fill: rgba(0, 255, 136, 0.7) !important;
+}
+
+.calendar rect.ContributionCalendar-day[data-level='4'] {
+    fill: var(--primary) !important;
+    filter: drop-shadow(0 0 3px var(--primary));
+}
+
+.calendar .float-left {
+    display: none;
+    /* Hide standard attribution text */
 }

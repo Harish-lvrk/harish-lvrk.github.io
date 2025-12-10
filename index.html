@@ -43,6 +43,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/enhanced.css">
+
+    <!-- GitHub Calendar -->
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css" />
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+
 </head>
 
 <body>
@@ -746,24 +751,54 @@
                 GitHub Activity
                 <span class="title-decorator">/&gt;</span>
             </h2>
-            <div class="github-content">
-                <div class="github-cards">
-                    <div class="github-stat-card">
-                        <img src="https://github-readme-stats.vercel.app/api?username=Harish-lvrk&show_icons=true&theme=radical&hide_border=true&bg_color=0a0a0f&title_color=00ff88&icon_color=00d4ff&text_color=e0e0e0"
-                            alt="GitHub Stats" loading="lazy">
+            <div class="github-profile-wrapper">
+                <div class="github-card">
+                    <div class="gh-header">
+                        <div class="gh-avatar-container">
+                            <img src="assets/images/profile.jpg" alt="Hareesh Lotti" class="gh-avatar">
+                            <span class="gh-status-dot"></span>
+                        </div>
+                        <div class="gh-info">
+                            <h3>Hareesh Lotti</h3>
+                            <span class="gh-username">@Harish-lvrk</span>
+                        </div>
                     </div>
-                    <div class="github-stat-card">
-                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Harish-lvrk&layout=compact&theme=radical&hide_border=true&bg_color=0a0a0f&title_color=00ff88&text_color=e0e0e0"
-                            alt="Top Languages" loading="lazy">
+
+                    <div class="gh-stats-grid">
+                        <div class="gh-stat">
+                            <span class="gh-stat-value" id="gh-repos">--</span>
+                            <span class="gh-stat-label">Repositories</span>
+                        </div>
+                        <div class="gh-stat">
+                            <span class="gh-stat-value" id="gh-followers">--</span>
+                            <span class="gh-stat-label">Followers</span>
+                        </div>
+                        <div class="gh-stat">
+                            <span class="gh-stat-value" id="gh-following">--</span>
+                            <span class="gh-stat-label">Following</span>
+                        </div>
                     </div>
-                </div>
-                <div class="github-streak">
-                    <img src="https://github-readme-streak-stats.herokuapp.com/?user=Harish-lvrk&theme=radical&hide_border=true&background=0a0a0f&ring=00ff88&fire=ff006e&currStreakLabel=00ff88"
-                        alt="GitHub Streak" loading="lazy">
-                </div>
-                <div class="github-graph">
-                    <img src="https://github-readme-activity-graph.vercel.app/graph?username=Harish-lvrk&theme=react-dark&hide_border=true&bg_color=0a0a0f&color=00ff88&line=00d4ff&point=ff006e"
-                        alt="Contribution Graph" loading="lazy">
+
+                    <div class="gh-graph-mock">
+                        <div class="gh-graph-title">
+                            <span>Activity Graph</span>
+                            <span style="color: var(--primary)">Last Year</span>
+                        </div>
+                        <!-- Calendar Container -->
+                        <div class="calendar">
+                            <!-- Loading message -->
+                            <div style="text-align: center; color: var(--text-muted); padding: 20px;">
+                                Loading contribution data...
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="gh-footer">
+                        <a href="https://github.com/Harish-lvrk" target="_blank" class="btn btn-secondary"
+                            style="width: 100%">
+                            <i class="fab fa-github"></i> View Full Profile
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

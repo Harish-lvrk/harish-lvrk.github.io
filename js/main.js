@@ -21,7 +21,45 @@ document.addEventListener('DOMContentLoaded', () => {
     initTextScramble();
     initFloatingElements();
     initMatrixRain();
+    // Initializers
+    initGitHubGraph();
+    fetchGitHubProfile();
 });
+
+/**
+ * Fetch Real GitHub Profile Data
+ */
+async function fetchGitHubProfile() {
+    try {
+        const username = 'Harish-lvrk';
+        const response = await fetch(`https://api.github.com/users/${username}`);
+
+        if (!response.ok) throw new Error('GitHub API failed');
+
+        const data = await response.json();
+
+        // Update DOM elements with real data
+        updateStat('gh-repos', data.public_repos);
+        updateStat('gh-followers', data.followers);
+        updateStat('gh-following', data.following);
+
+    } catch (error) {
+        console.log('Using fallback data');
+        // Fallback to static values if API fails
+        updateStat('gh-repos', '25+');
+        updateStat('gh-followers', '15+');
+        updateStat('gh-following', '10+');
+    }
+}
+
+function updateStat(id, value) {
+    const el = document.getElementById(id);
+    if (el) {
+        // Animate the number
+        el.textContent = value;
+        el.classList.add('fade-in');
+    }
+}
 
 /**
  * Preloader
@@ -749,3 +787,34 @@ Press Ctrl+\` for a fun surprise!
 
 `, 'color: #00ff88; font-family: monospace;');
 
+
+/**
+ * Initialize GitHub Calendar
+ */
+function initGitHubGraph() {
+    // wait for library to load
+    if (typeof GitHubCalendar !== 'function') {
+        setTimeout(initGitHubGraph, 500);
+        return;
+    }
+
+    GitHubCalendar(".calendar", "Harish-lvrk", {
+        responsive: true,
+        tooltips: true,
+        global_stats: false // Hide text stats as we use our own
+    }).then(function () {
+        // Animation effect for cells
+        const cells = document.querySelectorAll('.calendar rect.ContributionCalendar-day');
+        cells.forEach((cell, index) => {
+            cell.style.opacity = '0';
+            setTimeout(() => {
+                cell.style.opacity = '1';
+                cell.style.transition = 'opacity 0.2s';
+            }, index * 2);
+        });
+    }).catch(e => {
+        console.error("Calendar failed to load", e);
+        document.querySelector('.calendar').innerHTML =
+            '<p style="color:var(--text-muted); text-align:center;">Graph unavailable (API proxy limit)</p>';
+    });
+}
