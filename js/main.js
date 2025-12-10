@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initTextScramble();
     initFloatingElements();
     initMatrixRain();
+    initClipboard();
     // Initializers
     initGitHubGraph();
     fetchGitHubProfile();
@@ -817,4 +818,32 @@ function initGitHubGraph() {
         document.querySelector('.calendar').innerHTML =
             '<p style="color:var(--text-muted); text-align:center;">Graph unavailable (API proxy limit)</p>';
     });
+}
+/**
+ * Initialize Clipboard Copy
+ */
+function initClipboard() {
+    const emailBtns = document.querySelectorAll('.copy-email-btn');
+    const email = 'lottiharish@gmail.com';
+    const toast = document.getElementById('toast');
+
+    emailBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            // Allow default mailto action, but also copy
+
+            navigator.clipboard.writeText(email).then(() => {
+                showToast();
+            }).catch(err => {
+                console.error('Could not copy text: ', err);
+            });
+        });
+    });
+
+    function showToast() {
+        if (!toast) return;
+        toast.className = "toast show";
+        setTimeout(() => {
+            toast.className = toast.className.replace("show", "");
+        }, 3000);
+    }
 }
