@@ -1,0 +1,297 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot,
+    top=1.8 cm,
+    bottom=1.8 cm,
+    left=1.8 cm,
+    right=1.8 cm,
+    footskip=1.0 cm,
+]{geometry}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0, 79, 144}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{amsmath}
+\usepackage[
+    pdftitle={Hareesh Lotti's CV},
+    pdfauthor={Hareesh Lotti},
+    pdfcreator={LaTeX},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref}
+\usepackage[pscoord]{eso-pic}
+\usepackage{calc}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{changepage}
+\usepackage{paracol}
+\usepackage{ifthen}
+\usepackage{needspace}
+\usepackage{iftex}
+\usepackage{tfrupee}
+
+% Ensure ATS readability
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \usepackage{lmodern}
+\fi
+
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt}
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\topskip}{0pt}
+\setlength{\columnsep}{0cm}
+\makeatletter
+\let\ps@customFooterStyle\ps@plain
+\patchcmd{\ps@customFooterStyle}{\thepage}{
+    \color{gray}\textit{\small Hareesh Lotti - Page \thepage{} of \pageref*{LastPage}}
+}{}{}
+\makeatother
+\pagestyle{customFooterStyle}
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+\titlespacing{\section}{-1pt}{0.3 cm}{0.2 cm}
+
+\renewcommand\labelitemi{$\circ$}
+\newenvironment{highlights}{\begin{itemize}[topsep=0.10 cm,parsep=0.10 cm,partopsep=0pt,itemsep=0pt,leftmargin=0.4 cm + 10pt]}{\end{itemize}}
+\newenvironment{onecolentry}{\begin{adjustwidth}{0.2 cm + 0.00001 cm}{0.2 cm + 0.00001 cm}}{\end{adjustwidth}}
+\newenvironment{twocolentry}[2][]{\onecolentry\def\secondColumn{#2}\setcolumnwidth{\fill, 4.5 cm}\begin{paracol}{2}}{\switchcolumn \raggedleft \secondColumn\end{paracol}\endonecolentry}
+\newenvironment{header}{\setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}}{\par\kern\topsep}
+
+\let\hrefWithoutArrow\href
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{\ifthenelse{\equal{#2}{}}{ }{#2 }\raisebox{.15ex}{\footnotesize \faExternalLink*}}}
+
+\begin{document}
+\begin{header}
+    \textbf{\fontsize{24 pt}{24 pt}\selectfont HAREESH LOTTI}
+
+    \vspace{0.3 cm}
+    \centering
+    \begin{tabular}{@{}c@{\hskip 1.2cm}c@{\hskip 1.2cm}c@{\hskip 1.2cm}c@{\hskip 1.2cm}c@{}}
+        {\color{black}\footnotesize\faMapMarker*~Eluru District Nuzvid, AP} &
+        {\color{black}\footnotesize\faPhone*~6374248411} &
+        \hrefWithoutArrow{mailto:lottiharish@gmail.com}{\color{black}\footnotesize\faEnvelope[regular]~lottiharish@gmail.com} &
+        \hrefWithoutArrow{https://github.com/Harish-lvrk}{\color{black}\footnotesize\faGithub*~GitHub} &
+        \hrefWithoutArrow{https://www.linkedin.com/in/hareesh-lotti}{\color{black}\footnotesize\faLinkedin*~LinkedIn}
+    \end{tabular}
+\end{header}
+
+\section{Profile Summary}
+
+\begin{onecolentry}
+    Emerging \textbf{AI/ML Engineer} with hands-on experience building \textbf{RAG systems, vector search pipelines}, and 
+    \textbf{backend APIs} using FastAPI, LangChain, and Qdrant. Skilled in developing scalable document ingestion workflows, 
+    semantic search, and intelligent retrieval for real-world AI applications. Strong problem-solver with a focus on clean 
+    engineering, automation, and practical AI deployment.
+\end{onecolentry}
+
+
+
+
+\section{Education}
+\begin{twocolentry}{\textbf{2022--2026} \\ \textit{CGPA: 8.85}}
+    \textbf{Bachelor of Technology in Computer Science and Engineering} \\
+    \textit{Rajiv Gandhi University of Knowledge Technologies (IIIT Nuzvid), Andhra Pradesh}
+\end{twocolentry}
+
+\vspace{0.10 cm}
+\begin{twocolentry}{\textbf{2020--2022} \\ \textit{CGPA: 9.64}}
+    \textbf{Pre-University Course -- PUC} \\
+    \textit{Rajiv Gandhi University of Knowledge Technologies (IIIT Nuzvid), Andhra Pradesh}
+\end{twocolentry}
+
+\vspace{0.10 cm}
+\begin{twocolentry}{\textbf{2019--2020} \\ \textit{CGPA: 10}}
+    \textbf{Board of Secondary Education, Andhra Pradesh} \\
+    \textit{Vignan Vidhya Nikethan}
+\end{twocolentry}
+
+
+\section{Technical Skills}
+
+\begin{onecolentry}
+    \textbf{Programming:} Python (advanced), Java, C, SQL \\[2pt]
+    \textbf{AI/ML Frameworks:} PyTorch, TensorFlow, Scikit-learn, Keras, Transformers \\[2pt]
+    \textbf{Generative AI:} LangChain ,LangGraph, LangSmith, RAG Agents, Fine-tuning (PEFT, LoRA/QLoRA), OpenAI/Gemini/Groq APIs \\[2pt]
+    \textbf{NLP:} Hugging Face, NLTK, spaCy, fuzzywuzzy, BeautifulSoup, SentenceTransformers \\[2pt]
+    \textbf{Data Analysis \& Visualization:} Pandas, NumPy, SciPy, Matplotlib, Seaborn, Plotly, Geopandas \\[2pt]
+    \textbf{Web Development \& APIs:} Streamlit, Flask, FastAPI, Pydantic, REST APIs, Spring Boot, HTML/CSS/JavaScript, \textbf{Map Servers \& Clients (GIS)} \\[2pt]
+    \textbf{Audio Processing \& Real-time Systems:} Livekit, real-time audio mixing, resampy, scipy, soundfile, TTS pipelines \\[2pt]
+    \textbf{MLOps \& Deployment:} Docker, Git, CI/CD basics, MLflow, Hugging Face Hub \\[2pt]
+    \textbf{Databases:} MySQL, Vector Databases (Qdrant, FAISS, Chroma, Pinecone) \\
+\end{onecolentry}
+
+\section{Projects}
+
+
+
+\begin{onecolentry}
+    \textbf{Pneumonia Detection from Chest X-Ray Images using Custom CNN Architecture} \textit{\{Deep Learning, Medical Imaging\}} 
+    \hfill 
+    \href{https://github.com/Harish-lvrk/Pneumonia-Detection/tree/main/A_Custom_CNN_Architecture}{GitHub} \;|\;
+    \href{https://github.com/Harish-lvrk/Pneumonia-Detection/blob/main/A_Custom_CNN_Architecture/Summer_Intern_report_version_2.pdf}{Project Paper} \\
+    \begin{highlights}
+        \item Developed a 5-layer \textbf{Custom CNN architecture} in TensorFlow/Keras for automated pneumonia detection from pediatric chest X-rays.
+        \item Achieved \textbf{90.4\% test accuracy}, with \textbf{93\% precision for Pneumonia} and \textbf{87\% for Normal} cases on the test dataset of 5,863 images.
+        \item Implemented \textbf{comprehensive data augmentation} and \textbf{Batch Normalization/Dropout} techniques to counter class imbalance and overfitting.
+        \item Utilized \textbf{AI-assisted development tools (Cursor IDE)} for intelligent code generation, debugging, and documentation.
+        \item Proposed future enhancements including \textbf{ensemble methods, interpretability with Grad-CAM, and clinical validation}.
+    \end{highlights}
+\end{onecolentry}
+
+
+
+
+
+\begin{onecolentry}
+    \textbf{Ask Chatbot! (Integrated RAG \& Tool-Using AI Agent)} \hfill 
+    \textit{\{Generative AI, LangGraph, RAG, Agents, LangSmith\}} \hfill 
+    \href{https://github.com/Harish-lvrk/CHATBOT-STABLE}{\textbf{GitHub}} \\[0.15cm]
+    
+    \vspace{0.1cm}
+    \textit{\underline{Knowledge Assistant – Document-Based RAG System}} \\[-0.1cm]
+    \begin{highlights}
+        \item Developed a \textbf{Retrieval-Augmented Generation (RAG)} chatbot using \textbf{LangChain}, \textbf{FAISS}, and \textbf{Groq API} for accurate document-based question answering.
+        \item Enabled multi-document ingestion, semantic search, and adaptive context chunking for improved query relevance.
+        \item Optimized retrieval latency and precision through custom embedding management and query ranking logic.
+    \end{highlights}
+
+    \vspace{0.1cm}
+    \textit{\underline{Action Assistant – LangGraph \& Gemini Agent}} \\[-0.1cm]
+    \begin{highlights}
+        \item Built a \textbf{LangGraph}-powered intelligent agent integrated with \textbf{Google Gemini} for tool-based actions including \textbf{DuckDuckGo Search} and \textbf{WeatherStack API}.
+        \item Designed a refined \textbf{Streamlit UI} with tool execution progress indicators 
+        ("Using tool..." → "Tool finished") and clean final-response-only message rendering.
+        \item Integrated \textbf{LangSmith} for workflow debugging, LLM trace inspection, and performance analytics of multi-tool execution pipelines.
+    \end{highlights}
+\end{onecolentry}
+
+
+
+
+
+
+\vspace{0.1cm}
+\begin{onecolentry}
+    \textbf{Kaggle: NYC Taxi Fare Prediction} \hfill 
+    \textit{\{Machine Learning, Regression\}} \hfill 
+    \href{https://github.com/Harish-lvrk/ml-from-scratch/blob/main/new_york_tak_fare_prediction/nyc_taxi_fare_prediction_filled.ipynb}{\textbf{GitHub}} \\[0.1cm]
+    \begin{highlights}
+        \item Developed a regression model to predict NYC taxi fares, securing a \textbf{top 30\% Kaggle rank} with an RMSE of \textbf{\$3.0}.
+        \item Cleaned and preprocessed large-scale trip data, removing outliers and computing features like \textbf{Haversine distance} and temporal patterns.
+        \item Compared multiple algorithms and selected \textbf{XGBoost} as the best performer based on cross-validation results.
+    \end{highlights}
+\end{onecolentry}
+
+
+\vspace{0.1cm}
+\begin{onecolentry}
+    \textbf{Insurance Premium Prediction API} \hfill 
+    \textit{\{ML API, FastAPI, Docker\}} \hfill 
+    \href{https://github.com/Harish-lvrk/Insurance-Premium-Prediction-API}{\textbf{GitHub}} \,|\, 
+    \href{https://fastapi-insurance-app-1-0.onrender.com/docs}{\textbf{Live API Endpoint}} \\[0.1cm]
+    \begin{highlights}
+        \item Engineered features (BMI, age group, lifestyle risk) and trained a \textbf{Random Forest} model to predict insurance categories, achieving \textbf{90\% accuracy}.
+        \item Built a production-ready REST API using \textbf{FastAPI} to serve the trained model and provide real-time inference.
+        \item Implemented server-side data validation and automatic feature computation from raw inputs (e.g., age, height) using \textbf{Pydantic} models and \texttt{@computed\_field} decorators.
+        \item Designed a clear API response schema to return the predicted category, confidence score, and class probabilities.
+        \item Containerized the complete application, model, and dependencies using \textbf{Docker} for scalable and isolated deployment.
+    \end{highlights}
+\end{onecolentry}
+
+
+
+\vspace{0.1cm}
+\begin{onecolentry}
+    \textbf{YouTube Video Analyzer} \textit{\{RAG\}} \hfill \href{https://github.com/Harish-lvrk/YouTube_videos_Analyzer}{GitHub} \\
+    \begin{highlights}
+        \item Built a RAG-based application to "chat" with YouTube videos by asking questions about their transcribed content.
+        \item Engineered a pipeline to download video transcripts, create a searchable \textbf{FAISS} vector index, and generate answers using LangChain and Gemini.
+    \end{highlights}
+\end{onecolentry}
+
+
+
+\section{Experience}
+
+\section{AI Backend \& Applied Research Experience}
+
+\begin{onecolentry}
+\textbf{AI Backend Engineer (Contract Project) -- Zudu.ai} 
+\hfill \textbf{Nov 2025 -- Dec 2025} \\
+\textit{Product \& SaaS-Based Conversational AI Company}
+
+\begin{highlights}
+    \item Designed and deployed an enterprise-grade \textbf{RAG (Retrieval-Augmented Generation) backend microservice} using FastAPI, acting as the core knowledge engine for a production voice assistant.
+    \item Implemented a \textbf{Hybrid Search pipeline} in Qdrant combining dense embeddings with sparse keyword scoring, significantly improving retrieval precision for technical documents.
+    \item Enhanced query processing with \textbf{query rewriting capabilities} and fixed search threshold configuration bugs to improve relevance scoring.
+    \item Engineered a multi-format \textbf{document ingestion pipeline} with Adaptive Text Splitting (Recursive, Markdown, Semantic) and \textbf{Parent-Child Indexing}, ensuring full-context retrieval for long documents.
+    \item Integrated \textbf{semantic chunking} using LangChain Experimental and implemented \textbf{LLM-based metadata extraction} (Title, Author, Summary) to enhance document understanding and retrieval quality.
+    \item Built \textbf{high-fidelity PDF parsers} using PyMuPDF to handle complex layouts, tables, headings, and implemented \textbf{OCR fallback with Tesseract} for image-dominant documents.
+    \item Optimized end-to-end system latency using asynchronous I/O, vector batching, efficient Qdrant query parameters, and connection pooling—supporting real-time voice queries.
+    \item Developed a scalable and production-ready API infrastructure with structured logs, exception handling, health checks, and \textbf{Docker-based deployment} for Azure cloud environments.
+    \item Built a \textbf{real-time background sound mixing feature} for Livekit voice agents, implementing a \textbf{BackgroundSoundMixer service} in Python that integrates with the TTS pipeline to overlay ambient audio (9 sound types: coffee\_shop, call\_center, office, restaurant, outdoor, etc.) with configurable volume control (-30 to -10 dB).
+    \item Developed the backend API layer in Java (Spring Boot) for background sound configuration, including database migrations, entity lifecycle hooks, validation logic, and CRUD operations supporting agent-level audio customization.
+    \item Implemented comprehensive debug logging and error handling for audio processing workflows, ensuring robust troubleshooting capabilities for production voice assistant deployments.
+\end{highlights}
+
+\end{onecolentry}
+
+
+\begin{onecolentry}
+\textbf{Summer Internship - Black Bucks} -- AI \& ML Intern \hfill \textbf{2025}
+\begin{highlights}
+    \item Developed and optimized machine learning models for real-world business use cases, contributing to core product features.
+    \item Engineered data preprocessing and feature engineering pipelines to enhance model accuracy and robustness.
+\end{highlights}
+\end{onecolentry}
+\vspace{0.1cm}
+\begin{onecolentry}
+\textbf{Web Team Member} -- eCrush, IIIT Nuzvid \hfill \textbf{2022 -- Present}
+\begin{highlights}
+    \item Developed web automation tools, including a results scraper, to reduce manual work and support student engagement.
+\end{highlights}
+\end{onecolentry}
+\vspace{0.1cm}
+\begin{onecolentry}
+\textbf{Project Contributor} -- IIIT National Level Fest \hfill \textbf{2021 -- Present}
+\begin{highlights}
+    \item Designed a Lottery Ticket \& Email Automation System, generating over \textbf{\rupee 60,000 revenue} and adopted annually by juniors.
+\end{highlights}
+\end{onecolentry}
+
+
+\section{Certifications \& Achievements}
+\begin{onecolentry}
+\begin{minipage}[t]{0.48\textwidth}
+    \textbf{Certifications}
+    \begin{itemize}
+        \item NPTEL -- Deep Learning
+        \item NPTEL -- Large Language Models (LLMs)
+        \item \href{https://github.com/Harish-lvrk/Certificates}{View All Certificates}
+    \end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \textbf{Achievements}
+    \begin{itemize}
+        \item 1\textsuperscript{st} Place -- Madcode Coding Competition
+        \item 1\textsuperscript{st} Place -- Tech Hunt Competition
+        \item Organized and mentored AI/ML workshops for juniors
+        \item \href{https://github.com/Harish-lvrk/Certificates}{View Achievement Proofs}
+    \end{itemize}
+\end{minipage}
+\end{onecolentry}
+
+
+\end{document}
+
