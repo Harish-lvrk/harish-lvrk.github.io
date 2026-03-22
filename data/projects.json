@@ -1,5 +1,23 @@
 [
   {
+    "title": "Hareesh Lotti",
+    "description": "A unique, cyberpunk-themed portfolio website featuring neural network animations, terminal-style interface, and cutting-edge interactive elements.",
+    "category": [
+      "ai-agents",
+      "dl-cv",
+      "web-dev"
+    ],
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Canvas API"
+    ],
+    "github": "https://github.com/Harish-lvrk/harish-lvrk.github.io",
+    "featured": true,
+    "last_updated": "2026-03-22T14:30:56Z"
+  },
+  {
     "title": "StudyBud \u2014 Collaborative Study Platform",
     "description": "A full-featured, real-time collaborative study platform built with Django, enabling users to create and join study rooms, discuss topics, and connect with fellow learners.",
     "category": [
@@ -14,23 +32,6 @@
     "github": "https://github.com/Harish-lvrk/study_bud",
     "featured": true,
     "last_updated": "2026-03-22T13:33:40Z"
-  },
-  {
-    "title": "Hareesh Lotti",
-    "description": "My AI/ML Engineer Portfolio: A unique, cyberpunk-themed portfolio website featuring neural network animations, terminal-style interface, and cutting-edge interactive elements.",
-    "category": [
-      "ai-agents",
-      "web-dev"
-    ],
-    "tech": [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "Web Animations"
-    ],
-    "github": "https://github.com/Harish-lvrk/harish-lvrk.github.io",
-    "featured": true,
-    "last_updated": "2026-03-22T13:09:57Z"
   },
   {
     "title": "MCPs Collection",
