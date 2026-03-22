@@ -1454,3 +1454,56 @@ body {
     opacity: 1;
     bottom: 50px;
 }
+
+/* ============================================
+   AGENTIC MARQUEE
+   ============================================ */
+.agentic-marquee-container {
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background: rgba(10, 15, 20, 0.85);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(0, 255, 157, 0.3);
+    padding: 10px 0;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 9998;
+    box-shadow: 0 -5px 20px rgba(0, 255, 157, 0.15);
+}
+
+.marquee-content {
+    display: flex;
+    white-space: nowrap;
+    animation: scrollMarquee 35s linear infinite;
+    width: fit-content;
+}
+
+.marquee-content:hover {
+    animation-play-state: paused;
+}
+
+/* Hide scrollbar for the container */
+.agentic-marquee-container::-webkit-scrollbar {
+    display: none;
+}
+.agentic-marquee-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.marquee-content span {
+    color: var(--primary);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    letter-spacing: 2px;
+    padding-right: 20px;
+}
+
+@keyframes scrollMarquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
