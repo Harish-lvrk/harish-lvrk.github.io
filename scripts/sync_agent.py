@@ -124,6 +124,10 @@ def analyze_repo(state: AgentState):
         response = llm.invoke([HumanMessage(content=prompt)])
         content = response.content.replace("```json", "").replace("```", "").strip()
         repo_data = json.loads(content)
+        # 🔑 CRITICAL FIX: Always overwrite these fields with exact GitHub values.
+        # The LLM might alter the date format slightly, breaking cache comparisons.
+        repo_data['last_updated'] = repo['last_updated']
+        repo_data['github'] = repo['html_url']
         state['processed_data'].append(repo_data)
     except Exception as e:
         print(f"Error: {e}")
@@ -146,8 +150,20 @@ def save_data(state: AgentState):
     
     all_projects = state['existing_data'] + state['processed_data']
     
-    # Sort: Featured first, then alphabet
-    sorted_data = sorted(all_projects, key=lambda x: (not x.get('featured', False), x['title']))
+    # Sort: Featured first, then by last_updated (newest first)
+    sorted_data = sorted(
+        all_projects, 
+        key=lambda x: (not x.get('featured', False), x.get('last_updated', '')), 
+        reverse=False # We want (False, newest_date) to come first.
+    )
+    
+    # Actually, to get Featured (True) at top AND Newest date at top:
+    # False < True, so 'not featured' (False for featured) comes first.
+    # For dates, '2024' > '2023'. So for reverse=False, we need a way to make newer dates 'smaller'.
+    # Or just use a more explicit sort:
+    all_projects.sort(key=lambda x: x.get('last_updated', ''), reverse=True) # Newest first
+    all_projects.sort(key=lambda x: x.get('featured', False), reverse=True) # Then Featured first
+    sorted_data = all_projects
     
     with open(data_path, 'w') as f:
         json.dump(sorted_data, f, indent=2)

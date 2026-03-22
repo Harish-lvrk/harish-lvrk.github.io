@@ -628,8 +628,9 @@ body {
    ============================================ */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 30px;
+    grid-auto-flow: dense; /* Fill in holes automatically */
 }
 
 .project-card {
@@ -665,8 +666,14 @@ body {
 }
 
 .project-card.featured {
-    grid-column: span 2;
     background: linear-gradient(135deg, var(--bg-secondary), var(--bg-tertiary));
+    border-color: var(--primary-dim);
+}
+
+@media (min-width: 992px) {
+    .project-card.featured {
+        grid-column: span 2;
+    }
 }
 
 .project-header {

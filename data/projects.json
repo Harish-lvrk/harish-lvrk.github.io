@@ -1,8 +1,72 @@
 [
   {
-    "title": "Dig Django Todo Application",
-    "description": "A modern, robust, and responsive Todo application built with Django and Bootstrap 5. It features secure user authentication, private task lists, and demonstrates advanced database management with PostgreSQL, including data migration. Includes a guest demo mode and a responsive UI.",
-    "category": "web-dev",
+    "title": "MCPs Collection",
+    "description": "Implementation of Model Context Protocols (MCP) for standardizing AI context and tools.",
+    "category": "ai-agents",
+    "tech": [
+      "MCP",
+      "Python",
+      "AI Standards",
+      "API"
+    ],
+    "github": "https://github.com/Harish-lvrk/MCPs",
+    "featured": true,
+    "last_updated": "2026-03-21T16:30:07Z"
+  },
+  {
+    "title": "LangGraph ChatBot",
+    "description": "Advanced AI conversational agent built with LangGraph for complex task orchestration and state management.",
+    "category": "ai-agents",
+    "tech": [
+      "LangGraph",
+      "Python",
+      "LLM",
+      "Agents"
+    ],
+    "github": "https://github.com/Harish-lvrk/LangGraph-ChatBot",
+    "featured": true,
+    "last_updated": "2026-03-21T11:41:40Z"
+  },
+  {
+    "title": "STAC Manager",
+    "description": "A professional, modular Streamlit application designed to streamline the management of SpatioTemporal Asset Catalogs (STAC). It automates the end-to-end workflow of converting satellite imagery to Cloud-Optimized GeoTIFFs (COG), generating rich STAC metadata, and publishing items to a central API, featuring real-time service monitoring and full CRUD for collections.",
+    "category": [
+      "data-science",
+      "dl-cv",
+      "web-dev"
+    ],
+    "tech": [
+      "Streamlit",
+      "GDAL",
+      "Rasterio",
+      "Titiler"
+    ],
+    "github": "https://github.com/Harish-lvrk/stack_ingestor",
+    "featured": true,
+    "last_updated": "2026-03-04T12:46:01Z"
+  },
+  {
+    "title": "StudyBud: Collaborative Study Platform",
+    "description": "A full-featured, real-time collaborative study platform built with Django, enabling users to create and join study rooms, engage in real-time discussions, browse topics, and connect with fellow learners. Features a home feed, dynamic study rooms with chat, topic filtering, an activity feed, and user profiles.",
+    "category": [
+      "web-dev"
+    ],
+    "tech": [
+      "Django",
+      "Python",
+      "HTML",
+      "CSS"
+    ],
+    "github": "https://github.com/Harish-lvrk/study_bud",
+    "featured": true,
+    "last_updated": "2026-02-20T05:18:54Z"
+  },
+  {
+    "title": "Django Todo Application",
+    "description": "A robust and modern Todo application built with Django and Bootstrap 5, featuring secure user authentication, private task management, PostgreSQL integration, and a responsive user interface. Includes a demo mode for guest users and an onboarding experience for new registrations.",
+    "category": [
+      "web-dev"
+    ],
     "tech": [
       "Django",
       "PostgreSQL",
@@ -12,23 +76,6 @@
     "github": "https://github.com/Harish-lvrk/To_Do_Django",
     "featured": true,
     "last_updated": "2026-02-18T04:27:34Z"
-  },
-  {
-    "title": "Hareesh Lotti",
-    "description": "A unique, cyberpunk-themed portfolio website featuring neural network animations, terminal-style interface, and cutting-edge interactive elements.",
-    "category": [
-      "ai-agents",
-      "web-dev"
-    ],
-    "tech": [
-      "HTML",
-      "CSS",
-      "JavaScript",
-      "Web Animations"
-    ],
-    "github": "https://github.com/Harish-lvrk/harish-lvrk.github.io",
-    "featured": true,
-    "last_updated": "2026-03-22T13:03:27Z"
   },
   {
     "title": "Insurance Premium API",
@@ -46,48 +93,37 @@
     "last_updated": "2025-11-16T08:49:27Z"
   },
   {
-    "title": "LangGraph ChatBot",
-    "description": "Advanced AI conversational agent built with LangGraph for complex task orchestration and state management.",
-    "category": "ai-agents",
-    "tech": [
-      "LangGraph",
-      "Python",
-      "LLM",
-      "Agents"
-    ],
-    "github": "https://github.com/Harish-lvrk/LangGraph-ChatBot",
-    "featured": true,
-    "last_updated": "2026-03-21T11:41:40Z"
-  },
-  {
-    "title": "MCPs Collection",
-    "description": "Implementation of Model Context Protocols (MCP) for standardizing AI context and tools.",
-    "category": "ai-agents",
-    "tech": [
-      "MCP",
-      "Python",
-      "AI Standards",
-      "API"
-    ],
-    "github": "https://github.com/Harish-lvrk/MCPs",
-    "featured": true,
-    "last_updated": "2026-03-21T16:30:07Z"
-  },
-  {
-    "title": "ML From Scratch",
-    "description": "Comprehensive collection of Machine Learning projects and foundational notes, complete with datasets, trained models, and detailed explanations.",
+    "title": "Machine Learning From Scratch",
+    "description": "A comprehensive collection of machine learning projects and foundational notes, complete with datasets, trained models, and detailed explanations. Designed to build a robust understanding of core ML concepts and practical application.",
     "category": [
       "data-science"
     ],
     "tech": [
       "Python",
-      "scikit-learn",
-      "NumPy",
-      "Pandas"
+      "Scikit-learn",
+      "Pandas",
+      "NumPy"
     ],
     "github": "https://github.com/Harish-lvrk/ml-from-scratch",
     "featured": true,
-    "last_updated": "2023-10-26T10:00:00Z"
+    "last_updated": "2025-10-15T10:23:38Z"
+  },
+  {
+    "title": "Pneumonia-Detection",
+    "description": "A deep learning project implementing a custom 5-layer Convolutional Neural Network (CNN) with TensorFlow and Keras to accurately classify pediatric chest X-rays as 'Normal' or 'Pneumonia'. The model addresses challenges like class imbalance through data augmentation and achieves 90.4% accuracy on unseen test data, showcasing strong potential as a diagnostic aid in medical imaging.",
+    "category": [
+      "dl-cv",
+      "data-science"
+    ],
+    "tech": [
+      "TensorFlow",
+      "Keras",
+      "Python",
+      "Numpy"
+    ],
+    "github": "https://github.com/Harish-lvrk/Pneumonia-Detection",
+    "featured": true,
+    "last_updated": "2025-10-15T10:23:35Z"
   },
   {
     "title": "Medical Ask-Chatbot",
@@ -104,22 +140,40 @@
     "last_updated": "2025-10-15T10:23:33Z"
   },
   {
-    "title": "Pneumonia-Detection",
-    "description": "A deep learning project implementing a custom 5-layer CNN in TensorFlow/Keras to classify pediatric chest X-rays as 'Normal' or 'Pneumonia'. The model achieves 90.4% accuracy on unseen test data, addressing challenges like class imbalance through data augmentation and adaptive learning rates, demonstrating strong potential as a diagnostic aid.",
-    "category": "dl-cv",
-    "tech": [
-      "TensorFlow",
-      "Keras",
-      "Python",
-      "CNN"
+    "title": "LangChain RAG Implementation",
+    "description": "An implementation of Retrieval Augmented Generation (RAG) using the LangChain framework to enhance Large Language Model (LLM) capabilities with external knowledge bases, enabling context-aware and accurate responses.",
+    "category": [
+      "ai-agents"
     ],
-    "github": "https://github.com/Harish-lvrk/Pneumonia-Detection",
+    "tech": [
+      "Python",
+      "LangChain",
+      "Large Language Models (LLMs)",
+      "Vector Databases"
+    ],
+    "github": "https://github.com/Harish-lvrk/RAG_LangChain",
     "featured": true,
-    "last_updated": "2025-10-15T10:23:35Z"
+    "last_updated": "2025-10-15T10:23:30Z"
+  },
+  {
+    "title": "PyTorch Project",
+    "description": "A deep learning project leveraging the PyTorch framework to build and train neural networks, demonstrating proficiency in modern AI development.",
+    "category": [
+      "dl-cv"
+    ],
+    "tech": [
+      "PyTorch",
+      "Python",
+      "NumPy",
+      "Matplotlib"
+    ],
+    "github": "https://github.com/Harish-lvrk/PyTorch",
+    "featured": true,
+    "last_updated": "2025-10-14T15:39:32Z"
   },
   {
     "title": "Quora Question Pairs Semantic Similarity",
-    "description": "Determines if two questions are semantically similar using NLP techniques and a machine learning pipeline. Features a robust preprocessing pipeline, 15+ engineered numerical features, a Random Forest classifier (F1-score: 0.82), and an interactive Streamlit web application for real-time predictions.",
+    "description": "A Natural Language Processing (NLP) project that predicts semantic similarity of Quora question pairs using a machine learning pipeline and engineered features. The trained model is deployed as an interactive Streamlit web application with a live demo.",
     "category": "data-science",
     "tech": [
       "Python",
@@ -132,234 +186,20 @@
     "last_updated": "2025-10-14T15:39:01Z"
   },
   {
-    "title": "Retrieval-Augmented Generation (RAG) with LangChain",
-    "description": "An implementation of Retrieval-Augmented Generation (RAG) using the LangChain framework, demonstrating how to build LLM applications that can query and synthesize information from custom data sources to provide accurate and context-aware responses.",
+    "title": "Stark Careers Website",
+    "description": "A Python Flask-based careers website for 'stark', demonstrating practical web development skills including dependency management with `requirements.txt`, production server setup with Gunicorn, and deployment readiness on platforms like Render.",
     "category": [
-      "ai-agents",
-      "data-science"
-    ],
-    "tech": [
-      "LangChain",
-      "Python",
-      "LLMs",
-      "Vector Databases"
-    ],
-    "github": "https://github.com/Harish-lvrk/RAG_LangChain",
-    "featured": true,
-    "last_updated": "2024-05-25T14:30:00Z"
-  },
-  {
-    "title": "STAC Manager",
-    "description": "A professional, modular Streamlit application for managing SpatioTemporal Asset Catalogs (STAC). It automates the workflow of converting satellite imagery to Cloud-Optimized GeoTIFFs (COG), generating metadata-rich STAC items, and pushing them to a central API, featuring real-time service health monitoring and a guided user experience.",
-    "category": [
-      "data-science",
       "web-dev"
     ],
     "tech": [
-      "Streamlit",
-      "STAC API",
-      "GDAL",
-      "Rasterio"
-    ],
-    "github": "https://github.com/Harish-lvrk/stack_ingestor",
-    "featured": true,
-    "last_updated": "2026-03-04T12:46:01Z"
-  },
-  {
-    "title": "StudyBud \u2014 Collaborative Study Platform",
-    "description": "A full-featured, real-time collaborative study platform built with Django where users can create and join study rooms, discuss topics, and connect with fellow learners.",
-    "category": "web-dev",
-    "tech": [
-      "Django",
-      "Docker",
-      "Supabase",
+      "Python",
+      "Flask",
+      "Gunicorn",
       "Render"
     ],
-    "github": "https://github.com/Harish-lvrk/study_bud",
+    "github": "https://github.com/Harish-lvrk/stark-careers-website",
     "featured": true,
-    "last_updated": "2026-03-22T12:52:12Z"
-  },
-  {
-    "title": "CNN Lab",
-    "description": "Experiments with different Convolutional Neural Network architectures.",
-    "category": "dl-cv",
-    "tech": [
-      "CNN",
-      "Vision",
-      "Python"
-    ],
-    "github": "https://github.com/Harish-lvrk/CNN",
-    "featured": false,
-    "last_updated": "2025-10-14T15:39:44Z"
-  },
-  {
-    "title": "Cyberattack Detection",
-    "description": "Anomaly detection in network traffic using machine learning classifiers.",
-    "category": "data-science",
-    "tech": [
-      "Security",
-      "ML",
-      "Network Analysis"
-    ],
-    "github": "https://github.com/Harish-lvrk/Cyberattack-Detection-using_Network-Traffic-Data",
-    "featured": false,
-    "last_updated": "2025-05-15T05:53:43Z"
-  },
-  {
-    "title": "Data Analysis Essentials",
-    "description": "Numpy, Pandas, and visualization basics for aspiring data scientists.",
-    "category": "data-science",
-    "tech": [
-      "Numpy",
-      "Data Science",
-      "Viz"
-    ],
-    "github": "https://github.com/Harish-lvrk/Data-Analysis",
-    "featured": false,
-    "last_updated": "2025-10-14T15:38:32Z"
-  },
-  {
-    "title": "Data Analysis Hub",
-    "description": "Exploratory data analysis on diverse datasets with complex visualizations.",
-    "category": "data-science",
-    "tech": [
-      "Pandas",
-      "Seaborn",
-      "Matplotlib"
-    ],
-    "github": "https://github.com/Harish-lvrk/Data-Analysis-project",
-    "featured": false,
-    "last_updated": "2025-10-15T10:23:51Z"
-  },
-  {
-    "title": "Deep Learning Collection",
-    "description": "Repository of various deep learning models and research implementations.",
-    "category": "dl-cv",
-    "tech": [
-      "DL",
-      "Neural Nets",
-      "Research"
-    ],
-    "github": "https://github.com/Harish-lvrk/DL",
-    "featured": false,
-    "last_updated": "2025-10-15T05:09:27Z"
-  },
-  {
-    "title": "Dig Django Guide",
-    "description": "In-depth learning resources and projects for mastering the Django ecosystem.",
-    "category": "resources",
-    "tech": [
-      "Django",
-      "Back-end",
-      "Education"
-    ],
-    "github": "https://github.com/Harish-lvrk/dig_django",
-    "featured": false,
-    "last_updated": "2026-02-16T12:43:43Z"
-  },
-  {
-    "title": "Email Spam Classifier",
-    "description": "Binary classification model to identify promotional or spam emails using NLP.",
-    "category": "data-science",
-    "tech": [
-      "Naive Bayes",
-      "TF-IDF",
-      "Python"
-    ],
-    "github": "https://github.com/Harish-lvrk/email_spam_or_not",
-    "featured": false,
-    "last_updated": "2025-10-14T15:38:28Z"
-  },
-  {
-    "title": "Expense Tracker MCP",
-    "description": "Model Context Protocol server for automated expense tracking and auditing.",
-    "category": "ai-agents",
-    "tech": [
-      "MCP",
-      "FastAPI",
-      "SQLite"
-    ],
-    "github": "https://github.com/Harish-lvrk/Expense_tracker_mcp",
-    "featured": false,
-    "last_updated": "2026-02-28T18:16:55Z"
-  },
-  {
-    "title": "FastAPI Boilerplate",
-    "description": "High-performance API templates and ready-to-use backend structures.",
-    "category": "web-dev",
-    "tech": [
-      "FastAPI",
-      "Pydantic",
-      "API Design"
-    ],
-    "github": "https://github.com/Harish-lvrk/FastAPI",
-    "featured": false,
-    "last_updated": "2025-10-20T09:01:27Z"
-  },
-  {
-    "title": "Football Field Segmentation",
-    "description": "Computer vision system for detecting and segmenting play areas in sports video.",
-    "category": "dl-cv",
-    "tech": [
-      "OpenCV",
-      "PyTorch",
-      "Computer Vision"
-    ],
-    "github": "https://github.com/Harish-lvrk/football-field-segmentation",
-    "featured": false,
-    "last_updated": "2025-05-15T05:37:57Z"
-  },
-  {
-    "title": "LangChain Lab",
-    "description": "Basic building blocks and chain implementations for LLM apps.",
-    "category": "ai-agents",
-    "tech": [
-      "LangChain",
-      "Chains",
-      "Prompting"
-    ],
-    "github": "https://github.com/Harish-lvrk/LangChain",
-    "featured": false,
-    "last_updated": "2025-10-15T10:23:31Z"
-  },
-  {
-    "title": "LangGraph Core",
-    "description": "Fundamental experiments and patterns for stateful agent workflows.",
-    "category": "ai-agents",
-    "tech": [
-      "LangGraph",
-      "State Machines",
-      "AI"
-    ],
-    "github": "https://github.com/Harish-lvrk/LangGraph",
-    "featured": false,
-    "last_updated": "2025-11-04T14:08:26Z"
-  },
-  {
-    "title": "Langsmith Experiments",
-    "description": "Exploring LLM observability and evaluation using LangSmith.",
-    "category": "ai-agents",
-    "tech": [
-      "LangSmith",
-      "Observability",
-      "Python"
-    ],
-    "github": "https://github.com/Harish-lvrk/Langsmith",
-    "featured": false,
-    "last_updated": "2025-11-16T08:40:47Z"
-  },
-  {
-    "title": "Logic Type",
-    "description": "Gamified typing experience designed to improve coding reflex and accuracy.",
-    "category": "web-dev",
-    "tech": [
-      "JavaScript",
-      "Gamification",
-      "CSS"
-    ],
-    "github": "https://github.com/Harish-lvrk/logic-type",
-    "featured": false,
-    "last_updated": "2026-01-12T11:09:23Z"
+    "last_updated": "2025-08-15T12:46:19Z"
   },
   {
     "title": "Mining Manager",
@@ -375,21 +215,93 @@
     "last_updated": "2026-03-04T12:46:01Z"
   },
   {
-    "title": "PyTorch Deep Learning Examples",
-    "description": "A foundational repository showcasing implementations and explorations within the PyTorch deep learning framework. Demonstrates proficiency in designing, training, and evaluating neural network models for various AI applications.",
+    "title": "Expense Tracker MCP",
+    "description": "Model Context Protocol server for automated expense tracking and auditing.",
+    "category": "ai-agents",
+    "tech": [
+      "MCP",
+      "FastAPI",
+      "SQLite"
+    ],
+    "github": "https://github.com/Harish-lvrk/Expense_tracker_mcp",
+    "featured": false,
+    "last_updated": "2026-02-28T18:16:55Z"
+  },
+  {
+    "title": "Dig Django Guide",
+    "description": "In-depth learning resources and projects for mastering the Django ecosystem.",
+    "category": "resources",
+    "tech": [
+      "Django",
+      "Back-end",
+      "Education"
+    ],
+    "github": "https://github.com/Harish-lvrk/dig_django",
+    "featured": false,
+    "last_updated": "2026-02-16T12:43:43Z"
+  },
+  {
+    "title": "Portfolio v1",
+    "description": "The first iteration of my AI/ML engineer portfolio site.",
+    "category": "web-dev",
+    "tech": [
+      "HTML",
+      "CSS",
+      "Portfolio"
+    ],
+    "github": "https://github.com/Harish-lvrk/harish-lvrk.github.io",
+    "featured": false,
+    "last_updated": "2026-01-24T14:11:07Z"
+  },
+  {
+    "title": "Logic Type",
+    "description": "Gamified typing experience designed to improve coding reflex and accuracy.",
+    "category": "web-dev",
+    "tech": [
+      "JavaScript",
+      "Gamification",
+      "CSS"
+    ],
+    "github": "https://github.com/Harish-lvrk/logic-type",
+    "featured": false,
+    "last_updated": "2026-01-12T11:09:23Z"
+  },
+  {
+    "title": "YouTube_videos_Analyzer",
+    "description": "A project intended for analyzing YouTube videos. However, the complete absence of a description and an empty Readme makes it impossible to assess its specific functionalities, methodologies, or the impact it aims to achieve. This significantly hinders its effectiveness as a professional portfolio piece without further context.",
     "category": [
-      "dl-cv",
       "data-science"
     ],
-    "tech": [
-      "PyTorch",
-      "Python",
-      "NumPy",
-      "Jupyter Notebooks"
-    ],
-    "github": "https://github.com/Harish-lvrk/PyTorch",
+    "tech": [],
+    "github": "https://github.com/Harish-lvrk/YouTube_videos_Analyzer",
     "featured": false,
-    "last_updated": "2025-10-14T15:39:32Z"
+    "last_updated": "2025-11-16T08:53:53Z"
+  },
+  {
+    "title": "Langsmith Experiments",
+    "description": "Exploring LLM observability and evaluation using LangSmith.",
+    "category": "ai-agents",
+    "tech": [
+      "LangSmith",
+      "Observability",
+      "Python"
+    ],
+    "github": "https://github.com/Harish-lvrk/Langsmith",
+    "featured": false,
+    "last_updated": "2025-11-16T08:40:47Z"
+  },
+  {
+    "title": "LangGraph Core",
+    "description": "Fundamental experiments and patterns for stateful agent workflows.",
+    "category": "ai-agents",
+    "tech": [
+      "LangGraph",
+      "State Machines",
+      "AI"
+    ],
+    "github": "https://github.com/Harish-lvrk/LangGraph",
+    "featured": false,
+    "last_updated": "2025-11-04T14:08:26Z"
   },
   {
     "title": "Stable Chatbot",
@@ -405,8 +317,99 @@
     "last_updated": "2025-10-28T06:52:38Z"
   },
   {
+    "title": "FastAPI Boilerplate",
+    "description": "High-performance API templates and ready-to-use backend structures.",
+    "category": "web-dev",
+    "tech": [
+      "FastAPI",
+      "Pydantic",
+      "API Design"
+    ],
+    "github": "https://github.com/Harish-lvrk/FastAPI",
+    "featured": false,
+    "last_updated": "2025-10-20T09:01:27Z"
+  },
+  {
+    "title": "Data Analysis Hub",
+    "description": "Exploratory data analysis on diverse datasets with complex visualizations.",
+    "category": "data-science",
+    "tech": [
+      "Pandas",
+      "Seaborn",
+      "Matplotlib"
+    ],
+    "github": "https://github.com/Harish-lvrk/Data-Analysis-project",
+    "featured": false,
+    "last_updated": "2025-10-15T10:23:51Z"
+  },
+  {
+    "title": "LangChain Lab",
+    "description": "Basic building blocks and chain implementations for LLM apps.",
+    "category": "ai-agents",
+    "tech": [
+      "LangChain",
+      "Chains",
+      "Prompting"
+    ],
+    "github": "https://github.com/Harish-lvrk/LangChain",
+    "featured": false,
+    "last_updated": "2025-10-15T10:23:31Z"
+  },
+  {
+    "title": "Deep Learning Collection",
+    "description": "Repository of various deep learning models and research implementations.",
+    "category": "dl-cv",
+    "tech": [
+      "DL",
+      "Neural Nets",
+      "Research"
+    ],
+    "github": "https://github.com/Harish-lvrk/DL",
+    "featured": false,
+    "last_updated": "2025-10-15T05:09:27Z"
+  },
+  {
+    "title": "CNN Lab",
+    "description": "Experiments with different Convolutional Neural Network architectures.",
+    "category": "dl-cv",
+    "tech": [
+      "CNN",
+      "Vision",
+      "Python"
+    ],
+    "github": "https://github.com/Harish-lvrk/CNN",
+    "featured": false,
+    "last_updated": "2025-10-14T15:39:44Z"
+  },
+  {
+    "title": "Data Analysis Essentials",
+    "description": "Numpy, Pandas, and visualization basics for aspiring data scientists.",
+    "category": "data-science",
+    "tech": [
+      "Numpy",
+      "Data Science",
+      "Viz"
+    ],
+    "github": "https://github.com/Harish-lvrk/Data-Analysis",
+    "featured": false,
+    "last_updated": "2025-10-14T15:38:32Z"
+  },
+  {
+    "title": "Email Spam Classifier",
+    "description": "Binary classification model to identify promotional or spam emails using NLP.",
+    "category": "data-science",
+    "tech": [
+      "Naive Bayes",
+      "TF-IDF",
+      "Python"
+    ],
+    "github": "https://github.com/Harish-lvrk/email_spam_or_not",
+    "featured": false,
+    "last_updated": "2025-10-14T15:38:28Z"
+  },
+  {
     "title": "Stark Careers Website",
-    "description": "Developed a careers website for Stark, showcasing a Python Flask application with proper dependency management via `requirements.txt`. The project is configured for deployment on the Render platform, utilizing Gunicorn for a production-ready server environment.",
+    "description": "A careers website for stark, built using Python and Flask. The project is structured for production deployment on the Render platform, utilizing Gunicorn as the production server.",
     "category": [
       "web-dev"
     ],
@@ -421,35 +424,29 @@
     "last_updated": "2025-08-22T06:45:29Z"
   },
   {
-    "title": "Stark Careers Website",
-    "description": "A Python Flask-based careers website for 'Stark', designed for production deployment on the Render platform. This project demonstrates best practices for deploying Flask applications, utilizing gunicorn as a production-ready WSGI server.",
-    "category": [
-      "web-dev"
-    ],
+    "title": "Cyberattack Detection",
+    "description": "Anomaly detection in network traffic using machine learning classifiers.",
+    "category": "data-science",
     "tech": [
-      "Python",
-      "Flask",
-      "gunicorn",
-      "Render"
+      "Security",
+      "ML",
+      "Network Analysis"
     ],
-    "github": "https://github.com/Harish-lvrk/stark-careers-website",
+    "github": "https://github.com/Harish-lvrk/Cyberattack-Detection-using_Network-Traffic-Data",
     "featured": false,
-    "last_updated": "2024-07-30T10:00:00Z"
+    "last_updated": "2025-05-15T05:53:43Z"
   },
   {
-    "title": "YouTube Video Analyzer",
-    "description": "A project focused on extracting, processing, and analyzing data from YouTube videos to derive insights into performance metrics, trends, and content characteristics.",
-    "category": [
-      "data-science"
-    ],
+    "title": "Football Field Segmentation",
+    "description": "Computer vision system for detecting and segmenting play areas in sports video.",
+    "category": "dl-cv",
     "tech": [
-      "Python",
-      "Pandas",
-      "YouTube Data API",
-      "Matplotlib"
+      "OpenCV",
+      "PyTorch",
+      "Computer Vision"
     ],
-    "github": "https://github.com/Harish-lvrk/YouTube_videos_Analyzer",
+    "github": "https://github.com/Harish-lvrk/football-field-segmentation",
     "featured": false,
-    "last_updated": "2025-11-16T08:53:53Z"
+    "last_updated": "2025-05-15T05:37:57Z"
   }
 ]
