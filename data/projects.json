@@ -3,19 +3,18 @@
     "title": "Hareesh Lotti",
     "description": "A unique, cyberpunk-themed portfolio website featuring neural network animations, terminal-style interface, and cutting-edge interactive elements.",
     "category": [
-      "ai-agents",
-      "dl-cv",
-      "web-dev"
+      "web-dev",
+      "ai-agents"
     ],
     "tech": [
       "HTML",
       "CSS",
       "JavaScript",
-      "Canvas API"
+      "Web Animations"
     ],
     "github": "https://github.com/Harish-lvrk/harish-lvrk.github.io",
     "featured": true,
-    "last_updated": "2026-03-22T14:30:56Z"
+    "last_updated": "2026-03-22T16:08:19Z"
   },
   {
     "title": "StudyBud \u2014 Collaborative Study Platform",
