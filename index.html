@@ -250,17 +250,17 @@
                 <div class="about-stats">
                     <div class="stat-card">
                         <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
-                        <div class="stat-number" data-target="10">0</div>
+                        <div id="projects-count" class="stat-number" data-target="0">0</div>
                         <div class="stat-label">Projects Built</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-icon"><i class="fas fa-trophy"></i></div>
-                        <div class="stat-number" data-target="2">0</div>
+                        <div id="wins-count" class="stat-number" data-target="2">0</div>
                         <div class="stat-label">Competition Wins</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-icon"><i class="fas fa-certificate"></i></div>
-                        <div class="stat-number" data-target="5">0</div>
+                        <div id="cert-count" class="stat-number" data-target="5">0</div>
                         <div class="stat-label">Certifications</div>
                     </div>
                     <div class="stat-card">
@@ -397,8 +397,6 @@
                         <span class="tech-badge"><i class="fas fa-fire"></i> PyTorch</span>
                         <span class="tech-badge"><i class="fas fa-link"></i> LangChain</span>
                         <span class="tech-badge"><i class="fas fa-search"></i> Qdrant</span>
-                        <span class="tech-badge"><i class="fas fa-microphone"></i> Livekit</span>
-                        <span class="tech-badge"><i class="fas fa-chart-line"></i> MLflow</span>
                     </div>
                 </div>
             </div>
@@ -414,204 +412,7 @@
                 <span class="title-decorator">/&gt;</span>
             </h2>
             <div class="projects-grid">
-                <!-- Project 1: RAG System -->
-                <div class="project-card featured">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Harish-lvrk/Ask-Chatbot" target="_blank" class="project-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Ask Chatbot! - RAG & AI Agent</h3>
-                    <p class="project-description">
-                        Integrated RAG system with LangGraph-powered intelligent agents. Features document-based Q&A,
-                        multi-tool execution, and real-time workflow debugging with LangSmith.
-                    </p>
-                    <div class="project-features">
-                        <span class="feature"><i class="fas fa-check"></i> Semantic Search</span>
-                        <span class="feature"><i class="fas fa-check"></i> Tool Execution</span>
-                        <span class="feature"><i class="fas fa-check"></i> LangSmith Integration</span>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech">LangChain</span>
-                        <span class="tech">LangGraph</span>
-                        <span class="tech">FAISS</span>
-                        <span class="tech">Groq</span>
-                        <span class="tech">Streamlit</span>
-                    </div>
-                </div>
-
-                <!-- Project 2: Pneumonia Detection -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-lungs"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Harish-lvrk/Pneumonia-Detection" target="_blank"
-                                class="project-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://github.com/Harish-lvrk/Pneumonia-Detection/blob/main/A_Custom_CNN_Architecture/Summer_Intern_report_version_2.pdf"
-                                target="_blank" class="project-link">
-                                <i class="fas fa-file-pdf"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Pneumonia Detection CNN</h3>
-                    <p class="project-description">
-                        Custom 5-layer CNN for automated pneumonia detection from chest X-rays.
-                        Achieved 90.4% accuracy with comprehensive data augmentation.
-                    </p>
-                    <div class="project-metrics">
-                        <div class="metric">
-                            <span class="metric-value">90.4%</span>
-                            <span class="metric-label">Accuracy</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">93%</span>
-                            <span class="metric-label">Precision</span>
-                        </div>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech">TensorFlow</span>
-                        <span class="tech">Keras</span>
-                        <span class="tech">CNN</span>
-                        <span class="tech">Medical AI</span>
-                    </div>
-                </div>
-
-                <!-- Project 3: Insurance API -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Harish-lvrk/Insurance-Premium-Prediction-API" target="_blank"
-                                class="project-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://fastapi-insurance-app-1-0.onrender.com/docs" target="_blank"
-                                class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">Insurance Premium API</h3>
-                    <p class="project-description">
-                        Production-ready ML API for insurance premium prediction. Features real-time inference,
-                        Pydantic validation, and Docker deployment.
-                    </p>
-                    <div class="project-metrics">
-                        <div class="metric">
-                            <span class="metric-value">90%</span>
-                            <span class="metric-label">Accuracy</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">Live</span>
-                            <span class="metric-label">API Status</span>
-                        </div>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech">FastAPI</span>
-                        <span class="tech">Random Forest</span>
-                        <span class="tech">Docker</span>
-                        <span class="tech">Pydantic</span>
-                    </div>
-                </div>
-
-                <!-- Project 4: NYC Taxi -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-taxi"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Harish-lvrk/ml-from-scratch/blob/main/new_york_tak_fare_prediction/nyc_taxi_fare_prediction_filled.ipynb"
-                                target="_blank" class="project-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">NYC Taxi Fare Prediction</h3>
-                    <p class="project-description">
-                        Kaggle competition solution using XGBoost. Top 30% rank with feature engineering
-                        including Haversine distance and temporal patterns.
-                    </p>
-                    <div class="project-metrics">
-                        <div class="metric">
-                            <span class="metric-value">$3.0</span>
-                            <span class="metric-label">RMSE</span>
-                        </div>
-                        <div class="metric">
-                            <span class="metric-value">Top 30%</span>
-                            <span class="metric-label">Kaggle</span>
-                        </div>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech">XGBoost</span>
-                        <span class="tech">Pandas</span>
-                        <span class="tech">Feature Engineering</span>
-                    </div>
-                </div>
-
-                <!-- Project 5: YouTube Analyzer -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fab fa-youtube"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Harish-lvrk/YouTube_videos_Analyzer" target="_blank"
-                                class="project-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <h3 class="project-title">YouTube Video Analyzer</h3>
-                    <p class="project-description">
-                        RAG-based application to chat with YouTube videos. Downloads transcripts,
-                        creates FAISS vector index, and generates answers using Gemini.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech">RAG</span>
-                        <span class="tech">FAISS</span>
-                        <span class="tech">Gemini</span>
-                        <span class="tech">LangChain</span>
-                    </div>
-                </div>
-
-                <!-- Project 6: Enterprise RAG (Zudu) -->
-                <div class="project-card featured">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-microphone-alt"></i>
-                        </div>
-                        <span class="project-badge">Production</span>
-                    </div>
-                    <h3 class="project-title">Enterprise RAG Backend @ Zudu.ai</h3>
-                    <p class="project-description">
-                        Production voice assistant backend with hybrid search, semantic chunking,
-                        parent-child indexing, and real-time background sound mixing.
-                    </p>
-                    <div class="project-features">
-                        <span class="feature"><i class="fas fa-check"></i> Hybrid Search (Qdrant)</span>
-                        <span class="feature"><i class="fas fa-check"></i> Background Sound Mixer</span>
-                        <span class="feature"><i class="fas fa-check"></i> Real-time TTS</span>
-                    </div>
-                    <div class="project-tech">
-                        <span class="tech">FastAPI</span>
-                        <span class="tech">Qdrant</span>
-                        <span class="tech">Livekit</span>
-                        <span class="tech">Spring Boot</span>
-                        <span class="tech">Azure</span>
-                    </div>
-                </div>
+                <!-- Data loaded dynamically via js/projects.js -->
             </div>
         </div>
     </section>
@@ -625,92 +426,7 @@
                 <span class="title-decorator">/&gt;</span>
             </h2>
             <div class="timeline">
-                <!-- Zudu.ai -->
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3 class="timeline-title">AI Backend Engineer</h3>
-                            <span class="timeline-company">Zudu.ai</span>
-                        </div>
-                        <span class="timeline-date">Nov 2025 - Dec 2025</span>
-                        <p class="timeline-description">
-                            Built enterprise-grade RAG backend microservice for production voice assistant.
-                            Implemented hybrid search, semantic chunking, and real-time background sound mixing feature.
-                        </p>
-                        <div class="timeline-tech">
-                            <span>FastAPI</span>
-                            <span>Qdrant</span>
-                            <span>Livekit</span>
-                            <span>Spring Boot</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Black Bucks -->
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3 class="timeline-title">AI & ML Intern</h3>
-                            <span class="timeline-company">Black Bucks</span>
-                        </div>
-                        <span class="timeline-date">Summer 2025</span>
-                        <p class="timeline-description">
-                            Developed and optimized ML models for business use cases.
-                            Engineered data preprocessing and feature engineering pipelines.
-                        </p>
-                        <div class="timeline-tech">
-                            <span>Python</span>
-                            <span>Scikit-learn</span>
-                            <span>Feature Engineering</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- eCrush -->
-                <div class="timeline-item">
-                    <div class="timeline-marker">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3 class="timeline-title">Web Team Member</h3>
-                            <span class="timeline-company">eCrush, IIIT Nuzvid</span>
-                        </div>
-                        <span class="timeline-date">2022 - Present</span>
-                        <p class="timeline-description">
-                            Developed web automation tools including results scraper to reduce manual work
-                            and support student engagement.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Education -->
-                <div class="timeline-item education">
-                    <div class="timeline-marker">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <div class="timeline-content">
-                        <div class="timeline-header">
-                            <h3 class="timeline-title">B.Tech in Computer Science</h3>
-                            <span class="timeline-company">IIIT Nuzvid (RGUKT)</span>
-                        </div>
-                        <span class="timeline-date">2022 - 2026</span>
-                        <p class="timeline-description">
-                            CGPA: 8.85 | Specializing in AI/ML and Backend Development
-                        </p>
-                        <div class="achievements">
-                            <span class="achievement"><i class="fas fa-trophy"></i> 1st Place - Madcode
-                                Competition</span>
-                            <span class="achievement"><i class="fas fa-trophy"></i> 1st Place - Tech Hunt</span>
-                        </div>
-                    </div>
-                </div>
+                <!-- Data loaded dynamically via js/main.js -->
             </div>
         </div>
     </section>

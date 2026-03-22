@@ -1,0 +1,40 @@
+[
+  {
+    "type": "work",
+    "title": "AI Backend Engineer",
+    "company": "Zudu.ai",
+    "date": "Nov 2025 - Dec 2025",
+    "description": "Built enterprise-grade RAG backend microservice for production voice assistant. Implemented hybrid search, semantic chunking, and real-time background sound mixing feature.",
+    "tech": ["FastAPI", "Qdrant", "Livekit", "Spring Boot"],
+    "icon": "fa-briefcase"
+  },
+  {
+    "type": "internship",
+    "title": "AI & ML Intern",
+    "company": "Black Bucks",
+    "date": "Summer 2025",
+    "description": "Developed and optimized ML models for business use cases. Engineered data preprocessing and feature engineering pipelines.",
+    "tech": ["Python", "Scikit-learn", "Feature Engineering"],
+    "icon": "fa-laptop-code"
+  },
+  {
+    "type": "volunteer",
+    "title": "Web Team Member",
+    "company": "eCrush, IIIT Nuzvid",
+    "date": "2022 - Present",
+    "description": "Developed web automation tools including results scraper to reduce manual work and support student engagement.",
+    "icon": "fa-code"
+  },
+  {
+    "type": "education",
+    "title": "B.Tech in Computer Science",
+    "company": "IIIT Nuzvid (RGUKT)",
+    "date": "2022 - 2026",
+    "description": "CGPA: 8.85 | Specializing in AI/ML and Backend Development",
+    "achievements": [
+      "1st Place - Madcode Competition",
+      "1st Place - Tech Hunt"
+    ],
+    "icon": "fa-graduation-cap"
+  }
+]

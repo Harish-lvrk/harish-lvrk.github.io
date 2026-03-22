@@ -25,6 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initializers
     initGitHubGraph();
     fetchGitHubProfile();
+    initExperience();
+    updateAboutStats();
 });
 
 /**
@@ -845,5 +847,99 @@ function initClipboard() {
         setTimeout(() => {
             toast.className = toast.className.replace("show", "");
         }, 3000);
+    }
+}
+
+/**
+ * Dynamic Experience Loader
+ */
+async function initExperience() {
+    const timeline = document.querySelector('.timeline');
+    if (!timeline) return;
+
+    try {
+        const response = await fetch('data/experience.json');
+        const data = await response.json();
+        
+        // Clear hardcoded content
+        timeline.innerHTML = '';
+
+        data.forEach(item => {
+            const timelineItem = document.createElement('div');
+            timelineItem.className = `timeline-item ${item.type === 'education' ? 'education' : ''} reveal`;
+            
+            let achievementsHtml = '';
+            if (item.achievements) {
+                achievementsHtml = `
+                    <div class="achievements">
+                        ${item.achievements.map(a => `<span class="achievement"><i class="fas fa-trophy"></i> ${a}</span>`).join('')}
+                    </div>
+                `;
+            }
+
+            let techHtml = '';
+            if (item.tech) {
+                techHtml = `
+                    <div class="timeline-tech">
+                        ${item.tech.map(t => `<span>${t}</span>`).join('')}
+                    </div>
+                `;
+            }
+
+            timelineItem.innerHTML = `
+                <div class="timeline-marker">
+                    <i class="fas ${item.icon || 'fa-briefcase'}"></i>
+                </div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3 class="timeline-title">${item.title}</h3>
+                        <span class="timeline-company">${item.company}</span>
+                    </div>
+                    <span class="timeline-date">${item.date}</span>
+                    <p class="timeline-description">${item.description}</p>
+                    ${techHtml}
+                    ${achievementsHtml}
+                </div>
+            `;
+            timeline.appendChild(timelineItem);
+        });
+
+        // Re-run scroll animations for new elements
+        if (typeof initScrollAnimations === 'function') {
+            initScrollAnimations();
+        }
+
+    } catch (error) {
+        console.error('Error loading experience:', error);
+        if (timeline) {
+            timeline.innerHTML = `
+                <div class="error-message" style="text-align: center; padding: 20px; color: var(--accent);">
+                    <i class="fas fa-exclamation-triangle"></i>
+                    <p>Experience data blocked by browser security.</p>
+                </div>
+            `;
+        }
+    }
+}
+
+/**
+ * Dynamic Stats Loader for About Section
+ */
+async function updateAboutStats() {
+    try {
+        const response = await fetch('data/projects.json');
+        if (!response.ok) return;
+        const projects = await response.json();
+        
+        const projectCountEl = document.getElementById('projects-count');
+        if (projectCountEl) {
+            projectCountEl.setAttribute('data-target', projects.length);
+            // If the animation already ran (showing 0), we re-trigger it
+            projectCountEl.classList.remove('counted');
+            animateCounter(projectCountEl);
+        }
+
+    } catch (error) {
+        console.error('Error updating stats:', error);
     }
 }

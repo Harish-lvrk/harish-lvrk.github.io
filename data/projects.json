@@ -1,0 +1,452 @@
+[
+  {
+    "title": "LangGraph ChatBot",
+    "description": "Advanced AI conversational agent built with LangGraph for complex task orchestration and state management.",
+    "category": "ai-agents",
+    "tech": [
+      "LangGraph",
+      "Python",
+      "LLM",
+      "Agents"
+    ],
+    "github": "https://github.com/Harish-lvrk/LangGraph-ChatBot",
+    "featured": true,
+    "last_updated": "2026-03-21T11:41:40Z"
+  },
+  {
+    "title": "MCPs Collection",
+    "description": "Implementation of Model Context Protocols (MCP) for standardizing AI context and tools.",
+    "category": "ai-agents",
+    "tech": [
+      "MCP",
+      "Python",
+      "AI Standards",
+      "API"
+    ],
+    "github": "https://github.com/Harish-lvrk/MCPs",
+    "featured": true,
+    "last_updated": "2026-03-21T16:30:07Z"
+  },
+  {
+    "title": "YouTube Video Analyzer",
+    "description": "Intelligent RAG system to chat with YouTube videos and extract insights from transcripts.",
+    "category": "ai-agents",
+    "tech": [
+      "RAG",
+      "Gemini",
+      "FAISS",
+      "LangChain"
+    ],
+    "github": "https://github.com/Harish-lvrk/YouTube_videos_Analyzer",
+    "featured": true,
+    "last_updated": "2025-11-16T08:34:15Z"
+  },
+  {
+    "title": "Medical Ask-Chatbot",
+    "description": "RAG-powered medical assistance chatbot answering health queries using LangChain and FAISS.",
+    "category": "ai-agents",
+    "tech": [
+      "LangChain",
+      "RAG",
+      "FAISS",
+      "Medical AI"
+    ],
+    "github": "https://github.com/Harish-lvrk/Ask-Chatbot",
+    "featured": true,
+    "last_updated": "2025-10-15T10:23:33Z"
+  },
+  {
+    "title": "Insurance Premium API",
+    "description": "Production-ready FastAPI service delivering machine learning predictions for insurance costs.",
+    "category": "data-science",
+    "tech": [
+      "FastAPI",
+      "Scikit-learn",
+      "Docker",
+      "ML"
+    ],
+    "github": "https://github.com/Harish-lvrk/Insurance-Premium-Prediction-API",
+    "demo": "https://fastapi-insurance-app-1-0.onrender.com/docs",
+    "featured": true,
+    "last_updated": "2025-11-16T08:49:27Z"
+  },
+  {
+    "title": "Pneumonia Detection CNN",
+    "description": "Deep Learning model using custom CNN architecture for accurate pneumonia detection in Chest X-Rays.",
+    "category": "dl-cv",
+    "tech": [
+      "CNN",
+      "TensorFlow",
+      "Medical AI",
+      "CV"
+    ],
+    "github": "https://github.com/Harish-lvrk/Pneumonia-Detection",
+    "featured": true,
+    "last_updated": "2025-10-15T10:23:38Z"
+  },
+  {
+    "title": "RAG LangChain Patterns",
+    "description": "Comprehensive implementation of Retrieval-Augmented Generation patterns and vector search experiments.",
+    "category": "ai-agents",
+    "tech": [
+      "LangChain",
+      "Vector DB",
+      "Embeddings",
+      "RAG"
+    ],
+    "github": "https://github.com/Harish-lvrk/RAG_LangChain",
+    "featured": true,
+    "last_updated": "2025-10-15T10:23:26Z"
+  },
+  {
+    "title": "ML From Scratch",
+    "description": "Educational resource featuring core Machine Learning algorithms implemented from first principles.",
+    "category": "resources",
+    "tech": [
+      "Algorithms",
+      "Math",
+      "Python",
+      "Education"
+    ],
+    "github": "https://github.com/Harish-lvrk/ml-from-scratch",
+    "featured": true,
+    "last_updated": "2025-10-15T10:23:39Z"
+  },
+  {
+    "title": "Stack Ingestor",
+    "description": "Data ingestion pipeline for processing and managing large datasets efficiently.",
+    "category": "data-science",
+    "tech": [
+      "Python",
+      "ETL",
+      "Data Pipeline"
+    ],
+    "github": "https://github.com/Harish-lvrk/stack_ingestor",
+    "featured": false,
+    "last_updated": "2026-03-07T14:15:32Z"
+  },
+  {
+    "title": "Mining Manager",
+    "description": "Automation and resource monitoring system for mining operations.",
+    "category": "resources",
+    "tech": [
+      "Python",
+      "Automation",
+      "Monitoring"
+    ],
+    "github": "https://github.com/Harish-lvrk/mining_manager",
+    "featured": false,
+    "last_updated": "2026-03-04T12:46:01Z"
+  },
+  {
+    "title": "Expense Tracker MCP",
+    "description": "Model Context Protocol server for automated expense tracking and auditing.",
+    "category": "ai-agents",
+    "tech": [
+      "MCP",
+      "FastAPI",
+      "SQLite"
+    ],
+    "github": "https://github.com/Harish-lvrk/Expense_tracker_mcp",
+    "featured": false,
+    "last_updated": "2026-02-28T18:16:55Z"
+  },
+  {
+    "title": "To-Do Django",
+    "description": "Full-stack task management system with authentication and database persistence.",
+    "category": "web-dev",
+    "tech": [
+      "Django",
+      "PostgreSQL",
+      "Python"
+    ],
+    "github": "https://github.com/Harish-lvrk/To_Do_Django",
+    "featured": false,
+    "last_updated": "2026-02-14T05:38:28Z"
+  },
+  {
+    "title": "Logic Type",
+    "description": "Gamified typing experience designed to improve coding reflex and accuracy.",
+    "category": "web-dev",
+    "tech": [
+      "JavaScript",
+      "Gamification",
+      "CSS"
+    ],
+    "github": "https://github.com/Harish-lvrk/logic-type",
+    "featured": false,
+    "last_updated": "2026-01-12T11:09:23Z"
+  },
+  {
+    "title": "Football Field Segmentation",
+    "description": "Computer vision system for detecting and segmenting play areas in sports video.",
+    "category": "dl-cv",
+    "tech": [
+      "OpenCV",
+      "PyTorch",
+      "Computer Vision"
+    ],
+    "github": "https://github.com/Harish-lvrk/football-field-segmentation",
+    "featured": false,
+    "last_updated": "2025-05-15T05:37:57Z"
+  },
+  {
+    "title": "Cyberattack Detection",
+    "description": "Anomaly detection in network traffic using machine learning classifiers.",
+    "category": "data-science",
+    "tech": [
+      "Security",
+      "ML",
+      "Network Analysis"
+    ],
+    "github": "https://github.com/Harish-lvrk/Cyberattack-Detection-using_Network-Traffic-Data",
+    "featured": false,
+    "last_updated": "2025-05-15T05:53:43Z"
+  },
+  {
+    "title": "Stark Careers",
+    "description": "Modern frontend recruitment portal with professional UI components.",
+    "category": "web-dev",
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "github": "https://github.com/Harish-lvrk/stark-careers-website-v2",
+    "featured": false,
+    "last_updated": "2025-08-22T06:17:15Z"
+  },
+  {
+    "title": "Langsmith Experiments",
+    "description": "Exploring LLM observability and evaluation using LangSmith.",
+    "category": "ai-agents",
+    "tech": [
+      "LangSmith",
+      "Observability",
+      "Python"
+    ],
+    "github": "https://github.com/Harish-lvrk/Langsmith",
+    "featured": false,
+    "last_updated": "2025-11-16T08:40:47Z"
+  },
+  {
+    "title": "LangGraph Core",
+    "description": "Fundamental experiments and patterns for stateful agent workflows.",
+    "category": "ai-agents",
+    "tech": [
+      "LangGraph",
+      "State Machines",
+      "AI"
+    ],
+    "github": "https://github.com/Harish-lvrk/LangGraph",
+    "featured": false,
+    "last_updated": "2025-11-04T14:08:26Z"
+  },
+  {
+    "title": "FastAPI Boilerplate",
+    "description": "High-performance API templates and ready-to-use backend structures.",
+    "category": "web-dev",
+    "tech": [
+      "FastAPI",
+      "Pydantic",
+      "API Design"
+    ],
+    "github": "https://github.com/Harish-lvrk/FastAPI",
+    "featured": false,
+    "last_updated": "2025-10-20T09:01:27Z"
+  },
+  {
+    "title": "Deep Learning Collection",
+    "description": "Repository of various deep learning models and research implementations.",
+    "category": "dl-cv",
+    "tech": [
+      "DL",
+      "Neural Nets",
+      "Research"
+    ],
+    "github": "https://github.com/Harish-lvrk/DL",
+    "featured": false,
+    "last_updated": "2025-10-15T05:09:27Z"
+  },
+  {
+    "title": "PyTorch Scratch",
+    "description": "Building neural network layers and training loops from scratch using PyTorch.",
+    "category": "dl-cv",
+    "tech": [
+      "PyTorch",
+      "Tensors",
+      "Optimization"
+    ],
+    "github": "https://github.com/Harish-lvrk/PyTorch",
+    "featured": false,
+    "last_updated": "2025-10-14T15:39:39Z"
+  },
+  {
+    "title": "NLP Workspace",
+    "description": "Natural Language Processing tasks including sentiment analysis and text generation.",
+    "category": "dl-cv",
+    "tech": [
+      "NLP",
+      "Transformers",
+      "Spacy"
+    ],
+    "github": "https://github.com/Harish-lvrk/NLP",
+    "featured": false,
+    "last_updated": "2025-10-14T15:39:46Z"
+  },
+  {
+    "title": "Data Analysis Hub",
+    "description": "Exploratory data analysis on diverse datasets with complex visualizations.",
+    "category": "data-science",
+    "tech": [
+      "Pandas",
+      "Seaborn",
+      "Matplotlib"
+    ],
+    "github": "https://github.com/Harish-lvrk/Data-Analysis-project",
+    "featured": false,
+    "last_updated": "2025-10-15T10:23:51Z"
+  },
+  {
+    "title": "Email Spam Classifier",
+    "description": "Binary classification model to identify promotional or spam emails using NLP.",
+    "category": "data-science",
+    "tech": [
+      "Naive Bayes",
+      "TF-IDF",
+      "Python"
+    ],
+    "github": "https://github.com/Harish-lvrk/email_spam_or_not",
+    "featured": false,
+    "last_updated": "2025-10-14T15:38:28Z"
+  },
+  {
+    "title": "Study Bud App",
+    "description": "Social study platform for project management and group collaboration.",
+    "category": "web-dev",
+    "tech": [
+      "Fullstack",
+      "Django",
+      "Collaboration"
+    ],
+    "github": "https://github.com/Harish-lvrk/study_bud",
+    "featured": false,
+    "last_updated": "2026-02-15T11:34:21Z"
+  },
+  {
+    "title": "Dig Django Guide",
+    "description": "In-depth learning resources and projects for mastering the Django ecosystem.",
+    "category": "resources",
+    "tech": [
+      "Django",
+      "Back-end",
+      "Education"
+    ],
+    "github": "https://github.com/Harish-lvrk/dig_django",
+    "featured": false,
+    "last_updated": "2026-02-16T12:43:43Z"
+  },
+  {
+    "title": "Data Science Roadmap 2024",
+    "description": "A curated path for mastering data science, AI, and advanced analytics.",
+    "category": "resources",
+    "tech": [
+      "Learning Path",
+      "Career",
+      "AI"
+    ],
+    "github": "https://github.com/Harish-lvrk/Data-Science-Roadmap",
+    "featured": false,
+    "last_updated": "2024-01-09T16:34:26Z"
+  },
+  {
+    "title": "CNN Lab",
+    "description": "Experiments with different Convolutional Neural Network architectures.",
+    "category": "dl-cv",
+    "tech": [
+      "CNN",
+      "Vision",
+      "Python"
+    ],
+    "github": "https://github.com/Harish-lvrk/CNN",
+    "featured": false,
+    "last_updated": "2025-10-14T15:39:44Z"
+  },
+  {
+    "title": "Stable Chatbot",
+    "description": "Industrial-grade chatbot shell with robust deployment scripts.",
+    "category": "ai-agents",
+    "tech": [
+      "Shell",
+      "CI/CD",
+      "Bot"
+    ],
+    "github": "https://github.com/Harish-lvrk/CHATBOT-STABLE",
+    "featured": false,
+    "last_updated": "2025-10-28T06:52:38Z"
+  },
+  {
+    "title": "LangChain Lab",
+    "description": "Basic building blocks and chain implementations for LLM apps.",
+    "category": "ai-agents",
+    "tech": [
+      "LangChain",
+      "Chains",
+      "Prompting"
+    ],
+    "github": "https://github.com/Harish-lvrk/LangChain",
+    "featured": false,
+    "last_updated": "2025-10-15T10:23:31Z"
+  },
+  {
+    "title": "Data Analysis Essentials",
+    "description": "Numpy, Pandas, and visualization basics for aspiring data scientists.",
+    "category": "data-science",
+    "tech": [
+      "Numpy",
+      "Data Science",
+      "Viz"
+    ],
+    "github": "https://github.com/Harish-lvrk/Data-Analysis",
+    "featured": false,
+    "last_updated": "2025-10-14T15:38:32Z"
+  },
+  {
+    "title": "Stark Website V1",
+    "description": "Initial version of the Stark professional careers platform.",
+    "category": "web-dev",
+    "tech": [
+      "Web Development",
+      "CSS",
+      "HTML"
+    ],
+    "github": "https://github.com/Harish-lvrk/stark-careers-website",
+    "featured": false,
+    "last_updated": "2025-08-15T10:35:46Z"
+  },
+  {
+    "title": "Portfolio v1",
+    "description": "The first iteration of my AI/ML engineer portfolio site.",
+    "category": "web-dev",
+    "tech": [
+      "HTML",
+      "CSS",
+      "Portfolio"
+    ],
+    "github": "https://github.com/Harish-lvrk/harish-lvrk.github.io",
+    "featured": false,
+    "last_updated": "2026-01-24T14:11:07Z"
+  },
+  {
+    "title": "Certificates Vault",
+    "description": "Repository containing my professional certifications and achievements.",
+    "category": "resources",
+    "tech": [
+      "Certificates",
+      "Achievements"
+    ],
+    "github": "https://github.com/Harish-lvrk/Certificates",
+    "featured": false,
+    "last_updated": "2025-12-19T05:49:13Z"
+  }
+]
