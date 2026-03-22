@@ -1,5 +1,38 @@
 [
   {
+    "title": "Hareesh Lotti",
+    "description": "A unique, cyberpunk-themed portfolio website featuring neural network animations, terminal-style interface, and cutting-edge interactive elements.",
+    "category": [
+      "ai-agents",
+      "web-dev"
+    ],
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Web Animation"
+    ],
+    "github": "https://github.com/Harish-lvrk/harish-lvrk.github.io",
+    "featured": true,
+    "last_updated": "2026-03-22T13:09:18Z"
+  },
+  {
+    "title": "StudyBud \u2014 Collaborative Study Platform",
+    "description": "A full-featured, real-time collaborative study platform built with Django, enabling users to create and join study rooms, engage in real-time discussions, and connect with fellow learners. Features modern infrastructure including Docker, Supabase, and Render for robust deployment.",
+    "category": [
+      "web-dev"
+    ],
+    "tech": [
+      "Django",
+      "Docker",
+      "Supabase",
+      "Render"
+    ],
+    "github": "https://github.com/Harish-lvrk/study_bud",
+    "featured": true,
+    "last_updated": "2026-03-22T12:52:12Z"
+  },
+  {
     "title": "MCPs Collection",
     "description": "Implementation of Model Context Protocols (MCP) for standardizing AI context and tools.",
     "category": "ai-agents",
@@ -44,22 +77,6 @@
     "github": "https://github.com/Harish-lvrk/stack_ingestor",
     "featured": true,
     "last_updated": "2026-03-04T12:46:01Z"
-  },
-  {
-    "title": "StudyBud: Collaborative Study Platform",
-    "description": "A full-featured, real-time collaborative study platform built with Django, enabling users to create and join study rooms, engage in real-time discussions, browse topics, and connect with fellow learners. Features a home feed, dynamic study rooms with chat, topic filtering, an activity feed, and user profiles.",
-    "category": [
-      "web-dev"
-    ],
-    "tech": [
-      "Django",
-      "Python",
-      "HTML",
-      "CSS"
-    ],
-    "github": "https://github.com/Harish-lvrk/study_bud",
-    "featured": true,
-    "last_updated": "2026-02-20T05:18:54Z"
   },
   {
     "title": "Django Todo Application",
@@ -239,19 +256,6 @@
     "github": "https://github.com/Harish-lvrk/dig_django",
     "featured": false,
     "last_updated": "2026-02-16T12:43:43Z"
-  },
-  {
-    "title": "Portfolio v1",
-    "description": "The first iteration of my AI/ML engineer portfolio site.",
-    "category": "web-dev",
-    "tech": [
-      "HTML",
-      "CSS",
-      "Portfolio"
-    ],
-    "github": "https://github.com/Harish-lvrk/harish-lvrk.github.io",
-    "featured": false,
-    "last_updated": "2026-01-24T14:11:07Z"
   },
   {
     "title": "Logic Type",
