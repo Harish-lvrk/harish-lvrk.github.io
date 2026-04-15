@@ -1,5 +1,22 @@
 [
   {
+    "title": "Hareesh Lotti",
+    "description": "A unique, cyberpunk-themed AI/ML Engineer portfolio website featuring neural network animations, terminal-style interface, and cutting-edge interactive elements.",
+    "category": [
+      "ai-agents",
+      "web-dev"
+    ],
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Web Animations"
+    ],
+    "github": "https://github.com/Harish-lvrk/harish-lvrk.github.io",
+    "featured": true,
+    "last_updated": "2026-04-14T02:11:16Z"
+  },
+  {
     "title": "LangGraph ChatBot",
     "description": "A sophisticated conversational AI chatbot leveraging LangGraph to build robust, stateful multi-agent applications with Large Language Models.",
     "category": [
@@ -202,15 +219,6 @@
     "github": "https://github.com/Harish-lvrk/stark-careers-website",
     "featured": true,
     "last_updated": "2025-08-15T12:46:19Z"
-  },
-  {
-    "title": "harish-lvrk.github.io",
-    "description": "My AI/ML Engineer Portfolio",
-    "category": "web-dev",
-    "tech": [],
-    "github": "https://github.com/Harish-lvrk/harish-lvrk.github.io",
-    "featured": false,
-    "last_updated": "2026-04-13T02:24:29Z"
   },
   {
     "title": "Mining Manager",
