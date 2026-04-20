@@ -1,7 +1,7 @@
 [
   {
     "title": "Hareesh Lotti",
-    "description": "My AI/ML Engineer Portfolio, a unique, cyberpunk-themed website featuring neural network animations, a terminal-style interface, and cutting-edge interactive elements.",
+    "description": "A unique, cyberpunk-themed portfolio website featuring neural network animations, terminal-style interface, and cutting-edge interactive elements.",
     "category": [
       "ai-agents",
       "dl-cv",
@@ -15,7 +15,7 @@
     ],
     "github": "https://github.com/Harish-lvrk/harish-lvrk.github.io",
     "featured": true,
-    "last_updated": "2026-04-18T02:02:39Z"
+    "last_updated": "2026-04-19T02:24:01Z"
   },
   {
     "title": "LangGraph ChatBot",
