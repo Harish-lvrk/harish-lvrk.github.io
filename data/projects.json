@@ -4,18 +4,17 @@
     "description": "A unique, cyberpunk-themed AI/ML Engineer portfolio website featuring neural network animations, terminal-style interface, and cutting-edge interactive elements.",
     "category": [
       "ai-agents",
-      "dl-cv",
       "web-dev"
     ],
     "tech": [
-      "HTML",
-      "CSS",
       "JavaScript",
+      "CSS",
+      "HTML",
       "Canvas"
     ],
     "github": "https://github.com/Harish-lvrk/harish-lvrk.github.io",
     "featured": true,
-    "last_updated": "2026-05-09T02:34:16Z"
+    "last_updated": "2026-05-10T02:38:03Z"
   },
   {
     "title": "LangGraph ChatBot",
