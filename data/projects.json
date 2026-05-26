@@ -5,18 +5,17 @@
     "category": [
       "ai-agents",
       "dl-cv",
-      "data-science",
       "web-dev"
     ],
     "tech": [
       "HTML",
       "CSS",
       "JavaScript",
-      "Web Animations"
+      "Canvas API"
     ],
     "github": "https://github.com/Harish-lvrk/harish-lvrk.github.io",
     "featured": true,
-    "last_updated": "2026-05-24T02:53:07Z"
+    "last_updated": "2026-05-25T03:28:46Z"
   },
   {
     "title": "LangGraph ChatBot",
