@@ -1,10 +1,25 @@
 [
   {
+    "title": "Node.js & Express.js Backend Portfolio",
+    "description": "A comprehensive collection of backend projects developed with Node.js and Express.js, demonstrating expertise in RESTful API design, database integration with MongoDB and Mongoose, user authentication (JWT), file uploads, email services, and payment processing. Includes practical applications like a Task Manager, E-commerce API, and Jobs API.",
+    "category": [
+      "web-dev"
+    ],
+    "tech": [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT"
+    ],
+    "github": "https://github.com/Harish-lvrk/node-express",
+    "featured": true,
+    "last_updated": "2026-05-26T10:44:01Z"
+  },
+  {
     "title": "Hareesh Lotti",
     "description": "A unique, cyberpunk-themed portfolio website featuring neural network animations, terminal-style interface, and cutting-edge interactive elements.",
     "category": [
       "ai-agents",
-      "dl-cv",
       "web-dev"
     ],
     "tech": [
@@ -15,7 +30,7 @@
     ],
     "github": "https://github.com/Harish-lvrk/harish-lvrk.github.io",
     "featured": true,
-    "last_updated": "2026-05-25T03:28:46Z"
+    "last_updated": "2026-05-26T02:48:55Z"
   },
   {
     "title": "LangGraph ChatBot",
