@@ -1,7 +1,7 @@
 [
   {
     "title": "Hareesh Lotti",
-    "description": "My AI/ML Engineer Portfolio: A unique, cyberpunk-themed portfolio website featuring neural network animations, terminal-style interface, and cutting-edge interactive elements.",
+    "description": "A unique, cyberpunk-themed AI/ML engineer portfolio website featuring dynamic neural network animations, a terminal-style interface, and cutting-edge interactive elements to showcase projects and skills.",
     "category": [
       "ai-agents",
       "dl-cv",
@@ -15,7 +15,7 @@
     ],
     "github": "https://github.com/Harish-lvrk/harish-lvrk.github.io",
     "featured": true,
-    "last_updated": "2026-05-31T03:26:57Z"
+    "last_updated": "2026-06-01T03:39:14Z"
   },
   {
     "title": "Node.js & Express API Projects",
