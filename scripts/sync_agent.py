@@ -49,7 +49,7 @@ def fetch_and_filter_repos(state: AgentState):
 
         for repo in github_repos:
             # Skip forks and meta-repos
-            if repo['fork'] or repo['name'] in ['Harish-lvrk', 'Certificates']:
+            if repo['fork'] or repo['name'] in ['Harish-lvrk', 'Certificates', 'harish-lvrk.github.io']:
                 continue
             
             repo_url = repo['html_url']
