@@ -106,8 +106,25 @@
 
 
 \begin{onecolentry}
+\textbf{Software Developer / AI Engineer -- Dhruva Space} 
+\hfill \textbf{Feb 2026 -- Present} \\
+\textit{Space Technology Solutions Company | Defence \& Government Projects}
+
+\begin{highlights}
+    \item Developed and solely maintained \textbf{standalone and army-grade web applications} involving full-stack development, from architecture to production deployment.
+    \item Built a \textbf{real-time satellite tracking UI} integrated with a backend system, enabling live monitoring and geospatial data visualization for defence use cases.
+    \item Developed a web application with \textbf{object detection capabilities}, integrating computer vision models into a Django backend with a responsive frontend.
+    \item Handled end-to-end ownership of features — backend APIs, frontend UI, \textbf{testing, and client-facing delivery} — with direct involvement in high-level meetings and requirement discussions.
+    \item Collaborated within a \textbf{government and defence-oriented project environment}, adhering to security standards and mission-critical reliability requirements.
+    \item Worked across the full development lifecycle including collaborative team development, code reviews, and cross-functional coordination.
+\end{highlights}
+
+\end{onecolentry}
+
+\vspace{0.1cm}
+\begin{onecolentry}
 \textbf{AI Backend Engineer -- Zudu.ai} 
-\hfill \textbf{Nov 2025 -- Present} \\
+\hfill \textbf{Nov 2025 -- Feb 2026} \\
 \href{https://drive.google.com/drive/folders/1zOPz8wO3H5_AcfeQtzVeQiIVfbV6Kyll?usp=sharing}{\textbf{PRs At Zudu.ai}} \\[0.1cm]
 \textit{Product \& SaaS-Based Conversational AI Company}
 
@@ -124,27 +141,6 @@
 \end{onecolentry}
 
 
-\begin{onecolentry}
-\textbf{Summer Internship - Black Bucks} -- AI \& ML Intern \hfill \textbf{2025}
-\begin{highlights}
-    \item Developed and optimized machine learning models for real-world business use cases, contributing to core product features.
-    \item Engineered data preprocessing and feature engineering pipelines to enhance model accuracy and robustness.
-\end{highlights}
-\end{onecolentry}
-\vspace{0.1cm}
-\begin{onecolentry}
-\textbf{Web Team Member} -- eCrush, IIIT Nuzvid \hfill \textbf{2022 -- 2024}
-\begin{highlights}
-    \item Developed web automation tools, including a results scraper, to reduce manual work and support student engagement.
-\end{highlights}
-\end{onecolentry}
-\vspace{0.1cm}
-\begin{onecolentry}
-\textbf{Project Contributor} -- IIIT National Level Fest \hfill \textbf{2021 -- 2025}
-\begin{highlights}
-    \item Designed a Lottery Ticket \& Email Automation System, generating over \textbf{\rupee 60,000 revenue} and adopted annually by juniors.
-\end{highlights}
-\end{onecolentry}
 
 
 
@@ -183,16 +179,17 @@
 
 
 \begin{onecolentry}
-    \textbf{StudyBud — Collaborative Study Platform} \hfill
-    \textit{\{Django 5.2, PostgreSQL, Supabase, Docker, Render, HTMX, GitHub Actions\}} \\[0.05cm]
+    \textbf{StudyBud — Real-Time Collaborative Study Platform} \hfill
+    \textit{\{Django 5.2, HTMX, PostgreSQL, Supabase S3, Docker, GitHub Actions, Render\}} \\[0.05cm]
     \href{https://github.com/Harish-lvrk/study_bud}{\textbf{GitHub}} \;|\;
     \href{https://studybud-latest.onrender.com}{\textbf{Live Demo}} \\[0.1cm]
 
     \begin{highlights}
-        \item Developed a full-featured study platform with \textbf{real-time room-based messaging} powered by \textbf{HTMX} and optimized database queries to eliminate N+1 latency.
-        \item Automated the CI/CD pipeline using \textbf{GitHub Actions} for seamless \textbf{Docker} image builds and zero-downtime deployments to \textbf{Render}.
-        \item Integrated \textbf{Supabase} for managed PostgreSQL and S3-compatible media storage, engineering dynamic environment routing for instant local SQLite development vs. production cloud routing.
-        \item Implemented automated user profiling systems using \textbf{Django Signals} and engineered a custom, fully-responsive UI with \textbf{Vanilla CSS}.
+        \item Architected a \textbf{multi-model relational data layer} (Room, Message, Topic, Profile) with \textbf{ManyToMany participant tracking} and \textbf{Django Q-object search} across 3 fields, enabling full-text room discovery without raw SQL.
+        \item Engineered \textbf{HTMX-powered partial rendering} via a dedicated \texttt{room\_messages} endpoint using \texttt{select\_related} to eliminate N+1 queries, delivering live message feeds without a full-page reload or WebSocket overhead.
+        \item Built a fully automated \textbf{CI/CD pipeline} with \textbf{GitHub Actions}: Docker Buildx compiles a \texttt{linux/amd64} image on every push to \texttt{main}, pushes to Docker Hub, and triggers a \textbf{zero-downtime Render deploy} via webhook — end-to-end in a single workflow.
+        \item Designed a \textbf{dual-environment storage architecture}: \textbf{Supabase S3-compatible object storage} with custom public-URL domain routing for production, with a single \texttt{.env} flag switching to local \textbf{SQLite + filesystem} for instant development — no code changes required.
+        \item Automated user \textbf{Profile provisioning} using \textbf{Django \texttt{post\_save} Signals} with a safety-net fallback to prevent profile-missing crashes across all creation paths (register, admin, shell, management commands).
     \end{highlights}
 \end{onecolentry}
 
@@ -253,15 +250,15 @@
 \section{Technical Skills}
 
 \begin{onecolentry}
-    \textbf{Programming:} Python (advanced), SQL \\[2pt]
+    \textbf{Programming:} Python (advanced), C, C++, Java (basic), SQL \\[2pt]
     \textbf{AI/ML Frameworks:} PyTorch, TensorFlow, Scikit-learn, Keras, Transformers \\[2pt]
     \textbf{Generative AI:} LangChain, LangGraph, LangSmith, \textbf{Model Context Protocol (MCP)}, RAG Agents, OpenAI/Gemini/Groq APIs \\[2pt]
     \textbf{NLP:} Hugging Face, NLTK, spaCy, fuzzywuzzy, BeautifulSoup, SentenceTransformers \\[2pt]
     \textbf{Data Analysis \& Visualization:} \textbf{Manim (Animation)}, Pandas, NumPy, SciPy, Matplotlib, Seaborn, Plotly \\[2pt]
-    \textbf{Web Development \& APIs:} Django, Streamlit, Flask, FastAPI, \textbf{HTMX}, \textbf{Multi-server MCP Orchestration}, aiosqlite, REST APIs, HTML/CSS/JS \\[2pt]
-    
-    \textbf{MLOps \& Deployment:} Docker, Git, \textbf{GitHub Actions}, Hugging Face Hub \\[2pt]
-    \textbf{Databases:} PostgreSQL, \textbf{Supabase}, MySQL, Vector Databases (Qdrant, FAISS, Chroma, Pinecone) \\
+    \textbf{Backend Development:} FastAPI, Django, Flask, Node.js, Express.js, Streamlit, REST APIs, Microservices \\[2pt]
+    \textbf{Frontend Development:} HTML, CSS, JavaScript, React.js, \textbf{HTMX}, Responsive UI Development \\[2pt]
+    \textbf{Databases:} PostgreSQL, \textbf{Supabase}, MySQL, MongoDB, Qdrant, FAISS, Chroma, Pinecone \\[2pt]
+    \textbf{MLOps \& Tools:} Docker, Git, \textbf{GitHub Actions}, Postman, Hugging Face Hub, CI/CD, Linux \\
 \end{onecolentry}
 
 
@@ -274,8 +271,9 @@
 \begin{minipage}[t]{0.48\textwidth}
     \textbf{Certifications}
     \begin{itemize}
-        \item NPTEL -- Deep Learning
-        \item NPTEL -- Large Language Models (LLMs)
+        \item NPTEL -- Deep Learning \textit{(\textbf{Silver Badge}, Top 5\% nationally)}
+        \item NPTEL -- Large Language Models (LLMs) \textit{(70\% nationally)}
+        \item NPTEL -- C++ Programming \textit{(\textbf{Top 5\%} nationally)}
         \item \href{https://github.com/Harish-lvrk/Certificates}{View All Certificates}
     \end{itemize}
 \end{minipage}
