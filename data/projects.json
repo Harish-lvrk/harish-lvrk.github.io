@@ -220,6 +220,22 @@
     "last_updated": "2025-08-15T12:46:19Z"
   },
   {
+    "title": "React Redux Application",
+    "description": "A front-end web application demonstrating the integration of React for dynamic user interfaces and Redux for robust state management. This project showcases foundational web development skills in modern JavaScript frameworks.",
+    "category": [
+      "web-dev"
+    ],
+    "tech": [
+      "React",
+      "Redux",
+      "JavaScript",
+      "CSS"
+    ],
+    "github": "https://github.com/Harish-lvrk/React_Redux",
+    "featured": false,
+    "last_updated": "2026-06-28T15:22:13Z"
+  },
+  {
     "title": "Mining Manager",
     "description": "Automation and resource monitoring system for mining operations.",
     "category": "resources",
