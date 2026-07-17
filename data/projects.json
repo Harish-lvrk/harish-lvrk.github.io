@@ -1,5 +1,21 @@
 [
   {
+    "title": "RAG Chatbot (Groq + PDF)",
+    "description": "A Retrieval-Augmented Generation (RAG) Chatbot built with Streamlit, LangChain, and Groq LLM, enabling users to ask questions about any PDF document and receive accurate, context-aware answers with source linking.",
+    "category": [
+      "ai-agents"
+    ],
+    "tech": [
+      "Streamlit",
+      "LangChain",
+      "Groq LLM",
+      "ChromaDB"
+    ],
+    "github": "https://github.com/Harish-lvrk/Ask-Chatbot",
+    "featured": true,
+    "last_updated": "2026-07-16T07:55:31Z"
+  },
+  {
     "title": "Node.js & Express API Projects",
     "description": "A comprehensive collection of backend API projects built with Node.js and Express, demonstrating proficiency in database integration (MongoDB, Mongoose), authentication (JWT), file management, payment processing (Stripe), email services, and robust API development.",
     "category": [
@@ -142,20 +158,6 @@
     "github": "https://github.com/Harish-lvrk/Pneumonia-Detection",
     "featured": true,
     "last_updated": "2025-10-15T10:23:35Z"
-  },
-  {
-    "title": "Medical Ask-Chatbot",
-    "description": "RAG-powered medical assistance chatbot answering health queries using LangChain and FAISS.",
-    "category": "ai-agents",
-    "tech": [
-      "LangChain",
-      "RAG",
-      "FAISS",
-      "Medical AI"
-    ],
-    "github": "https://github.com/Harish-lvrk/Ask-Chatbot",
-    "featured": true,
-    "last_updated": "2025-10-15T10:23:33Z"
   },
   {
     "title": "LangChain RAG Implementation",
