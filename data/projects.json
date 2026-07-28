@@ -222,6 +222,22 @@
     "last_updated": "2025-08-15T12:46:19Z"
   },
   {
+    "title": "Vignan Vidhay Niketha School Project",
+    "description": "A foundational web development project, likely built for an educational institution (Vignan Vidhay Niketha School). Demonstrates basic front-end skills suitable for a school website or informational portal, potentially hosted via GitHub Pages.",
+    "category": [
+      "web-dev"
+    ],
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "GitHub Pages"
+    ],
+    "github": "https://github.com/Harish-lvrk/VignanVidhayNikethaSchool",
+    "featured": false,
+    "last_updated": "2026-07-27T16:30:37Z"
+  },
+  {
     "title": "React Redux Application",
     "description": "A front-end web application demonstrating the integration of React for dynamic user interfaces and Redux for robust state management. This project showcases foundational web development skills in modern JavaScript frameworks.",
     "category": [
